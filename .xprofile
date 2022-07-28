@@ -7,5 +7,6 @@ export GOROOT="/usr/lib/go"
 
 export PATH="$HOME/bin:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
 
+numlockx &
 xfce4-clipman &
 sh $HOME/bin/dual_monitor.sh &
