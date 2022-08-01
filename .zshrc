@@ -35,3 +35,10 @@ export PF_INFO="ascii title os host kernel uptime pkgs memory shell editor wm"
 export PF_COL1=3
 export PF_COL2=6
 export PF_COL3=1
+
+
+export LANG=en_US.UTF-8
+export GOPATH="$HOME/go"
+export GOROOT="/usr/lib/go"
+export PATH="$HOME/bin:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
+export MOZ_ENABLE_WAYLAND=1
