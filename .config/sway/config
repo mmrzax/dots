@@ -188,7 +188,7 @@ bar {
 # Startup Apps
 
 	exec_always lxpolkit &
-	#exec_always clash &
+	exec_always clash &
 	exec_always nm-applet --indicator &
 
 # Gaps
@@ -200,6 +200,7 @@ bar {
 	default_border pixel 3
 
 # GTK Options
+
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'Nordic-darker'
@@ -208,5 +209,12 @@ exec_always {
 	#gsettings set $gnome-schema cursor-size ''
 	gsettings set $gnome-schema font-name 'Ubuntu 12'
 }
+
+# Idle configuration
+
+exec swayidle -w \
+		 timeout 300 'swaylock -f -c 000000' \
+		 timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+		 before-sleep 'swaylock -f -c 000000'
 
 include /etc/sway/config.d/*
