@@ -10,6 +10,9 @@ set $right l
 # Terminal
 set $term kitty
 
+# File Manager
+set $files ranger
+
 # Application Launcher
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi -Ii --show=drun --lines=5 --prompt=""
@@ -42,6 +45,10 @@ output HDMI-A-1 pos 0 0 res 1366x768 bg ~/.wallpapers/wallhaven-57joz1_1366x768.
 
     # Start a terminal
     bindsym $mod+grave exec $term
+
+	# Start a file manager
+	#bindsym $mod+u exec $files
+	bindsym $mod+u exec $term --hold $files
 
     # Kill focused window
     bindsym $mod+Shift+q kill
