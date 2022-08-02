@@ -7,7 +7,7 @@
     "margin-top": 5,
     "modules-left": ["sway/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "temperature", "cpu", "memory", "battery", "pulseaudio", "tray"],
+    "modules-right": ["network", "cpu", "memory", "battery", "pulseaudio", "tray"],
     "sway/workspaces": {
         "disable-scroll": true,
         "disable-click": true,
