@@ -189,7 +189,7 @@ bar {
 
 	exec_always lxpolkit &
 	#exec_always clash &
-	exec_always nm-applet &
+	exec_always nm-applet --indicator &
 
 # Gaps
 
