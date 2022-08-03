@@ -15,8 +15,8 @@ set $files ranger
 
 # Application Launcher
 #set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi -Ii --show=drun --lines=5 --prompt=""
-set $menu2 wofi -Ii --show=run --lines=5 --prompt=""
+set $menu wofi -Ii -S drun -L 5 -W 500 -p ""
+set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 
 # Inputs
 
