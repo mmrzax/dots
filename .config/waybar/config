@@ -30,7 +30,7 @@
     },
     "battery": {
         "bat": "BAT0",
-        "full-at": 95,
+        "full-at": 100,
         "states": {
             "good": 95,
             "warning": 30,
