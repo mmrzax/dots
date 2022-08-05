@@ -39,7 +39,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 output eDP-1 scale 1.0
 output HDMI-A-1 scale 1.0
 output eDP-1 pos 1366 0 res 1920x1080 bg ~/.wallpapers/wp7199912-anime-hacker-hd-wallpapers.jpg fill
-output HDMI-A-1 pos 0 0 res 1366x768 bg ~/.wallpapers/wallhaven-57joz1_1366x768.png fill
+output HDMI-A-1 pos 0 0 res 1366x768 bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1366x768.png fill
 
 # Key bindings
 
@@ -194,9 +194,9 @@ bar {
 
 # Startup Apps
 
-	exec_always lxpolkit &
-	exec_always clash &
-	exec_always nm-applet --indicator &
+	exec lxsession &
+	exec clash &
+	exec nm-applet --indicator &
 
 # Gaps
 
