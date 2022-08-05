@@ -1,11 +1,20 @@
 /* waybar style.css */
-@define-color bgcolor #9ce2f5;	/* background color */
-@define-color fgcolor #000000;  /* foreground color */
-@define-color charging #07fb05; /* battery charging color */
-@define-color plugged #acfcad;  /* ac plugged color */
-@define-color critical #ff0000; /* critical color */
-@define-color warning #f3f809;  /* warning color */
-@define-color hover #94a6e3;    /* mouse hover over workspace color */ 
+
+/*@define-color bgcolor #9ce2f5;*/	/* background color */
+/*@define-color fgcolor #000000;*/  /* foreground color */
+/*@define-color charging #07fb05;*/ /* battery charging color */
+/*@define-color plugged #acfcad;*/  /* ac plugged color */
+/*@define-color critical #ff0000;*/ /* critical color */
+/*@define-color warning #f3f809;*/  /* warning color */
+/*@define-color hover #94a6e3;*/    /* mouse hover over workspace color */ 
+
+@define-color bgcolor #2e3440;	/* background color */
+@define-color fgcolor #d8dee9;  /* foreground color */
+@define-color charging #a3be8c; /* battery charging color */
+@define-color plugged #b48ead;  /* ac plugged color */
+@define-color critical #bf616a; /* critical color */
+@define-color warning #ebcb8b;  /* warning color */
+@define-color hover #4c566a;    /* mouse hover over workspace color */ 
 
 /* Reset all styles */
 * {
