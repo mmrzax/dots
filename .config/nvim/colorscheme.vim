@@ -1,15 +1,15 @@
 " Everforest
-if has('termguicolors')
-  set termguicolors
-endif
-let g:everforest_background = 'hard'
-let g:everforest_enable_italic = 0
-let g:everforest_disable_italic_comment = 0
-let g:everforest_transparent_background = 0 " 0, 1, 2
-let g:everforest_sign_column_background = 'none' " 'none', 'grey'
-let g:everforest_diagnostic_text_highlight = 0
-let g:everforest_better_performance = 1
-colorscheme everforest
+"if has('termguicolors')
+  "set termguicolors
+"endif
+"let g:everforest_background = 'hard'
+"let g:everforest_enable_italic = 0
+"let g:everforest_disable_italic_comment = 0
+"let g:everforest_transparent_background = 0 " 0, 1, 2
+"let g:everforest_sign_column_background = 'none' " 'none', 'grey'
+"let g:everforest_diagnostic_text_highlight = 0
+"let g:everforest_better_performance = 1
+"colorscheme everforest
 
 " Gruvbox
 "let g:gruvbox_italicize_comments=1
@@ -31,3 +31,12 @@ colorscheme everforest
 
 " Iceberg
 "colorscheme iceberg
+
+" TokyoNight
+let g:tokyonight_style = 'night'
+let g:tokyonight_italic_comments = 1
+let g:tokyonight_italic_keywords = 1
+let g:tokyonight_dark_sidebar = 1
+let g:tokyonight_dark_float = 1
+let g:tokyonight_sidebars = [ "coc-explorer" ]
+colorscheme tokyonight

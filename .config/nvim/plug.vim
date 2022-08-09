@@ -5,6 +5,7 @@ Plug 'sainnhe/everforest'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'cocopon/iceberg.vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Appearance
 Plug 'mengelbrecht/lightline-bufferline'
