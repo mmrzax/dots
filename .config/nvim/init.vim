@@ -10,7 +10,7 @@ source ~/.config/nvim/fix-colors.vim
 " Plugin Config
 source ~/.config/nvim/plugin/coc-nvim.vim
 source ~/.config/nvim/plugin/coc-prettier.vim
-source ~/.config/nvim/plugin/coc-explorer.vim
+"source ~/.config/nvim/plugin/coc-explorer.vim
 source ~/.config/nvim/plugin/lightline.vim
 source ~/.config/nvim/plugin/lightline-bufferline.vim
 source ~/.config/nvim/plugin/nerdcommenter.vim
@@ -21,3 +21,4 @@ source ~/.config/nvim/plugin/indentline.vim
 lua require("arya/telescope")
 lua require("arya/treesitter")
 lua require('go').setup()
+lua require("nvim-tree").setup()

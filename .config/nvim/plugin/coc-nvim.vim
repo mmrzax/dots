@@ -1,5 +1,5 @@
 let g:coc_node_path = $NODE_PATH
-let g:coc_global_extensions = ['coc-prettier', 'coc-eslint', 'coc-yaml', 'coc-tsserver', 'coc-json', 'coc-explorer', 'coc-html', 'coc-deno']
+let g:coc_global_extensions = ['coc-prettier', 'coc-eslint', 'coc-yaml', 'coc-tsserver', 'coc-json', 'coc-html', 'coc-deno']
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
 else

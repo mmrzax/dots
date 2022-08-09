@@ -11,6 +11,8 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-tree.lua'
 
 " LSP - Linter - Syntax Highlight
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
