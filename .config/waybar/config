@@ -15,7 +15,7 @@
 "custom/weather": {
   "tooltip": false,
   "min-length": 5,
-  "exec": "curl 'https://wttr.in/Rafsanjan?m&format='%t''",
+  "exec": "curl 'https://wttr.in/Rafsanjan?m&format='%l:+%t+%c''",
   "interval": 3600,
 },
 "battery": {
