@@ -7,8 +7,8 @@ require("bufferline").setup({
 		offsets = {
 			{
 				filetype = "NvimTree",
-				text = "File Explorer",
-				highlight = "Directory",
+				--text = "File Explorer",
+				--highlight = "Directory",
 				text_align = "center",
 			},
 		},

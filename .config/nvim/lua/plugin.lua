@@ -16,7 +16,9 @@ end
 
 return require("packer").startup(function()
 	-- packer itself
-	use({ "wbthomason/packer.nvim" })
+	use({
+		"wbthomason/packer.nvim",
+	})
 
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -42,7 +44,9 @@ return require("packer").startup(function()
 		end,
 	})
 
-	use({ "tpope/vim-fugitive" })
+	use({
+		"tpope/vim-fugitive",
+	})
 
 	use({
 		"kyazdani42/nvim-tree.lua",
@@ -94,6 +98,13 @@ return require("packer").startup(function()
 		requires = "kyazdani42/nvim-web-devicons",
 		config = function()
 			require("mmrzax.bufferline")
+		end,
+	})
+
+	use({
+		"marko-cerovac/material.nvim",
+		config = function()
+			require("mmrzax.theme")
 		end,
 	})
 end)
