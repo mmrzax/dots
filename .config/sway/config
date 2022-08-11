@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term kitty
+set $term alacritty
 
 # File Manager
 set $files ranger
@@ -215,6 +215,7 @@ exec_always {
 	#gsettings set $gnome-schema cursor-theme ''
 	#gsettings set $gnome-schema cursor-size ''
 	gsettings set $gnome-schema font-name 'Ubuntu 12'
+    gsettings set $gnome-schema monospace-font-name 'JetBrainsMono Nerd Font 12'
 }
 
 # Idle configuration
