@@ -12,8 +12,8 @@ key("n", "<C-c>jj", ":bd!<CR>")
 key("v", ".", ":norm.<CR>")
 
 -- paste
-key("i", "<C-p>j", '<C-r>"')
-key("i", "<C-p>k", "<C-r>*")
+-- key("i", "<C-p>j", '<C-r>"')
+-- key("i", "<C-p>k", "<C-r>*")
 
 -- moving between windows
 key("", "<leader>h", ":wincmd h<CR>", { noremap = false })

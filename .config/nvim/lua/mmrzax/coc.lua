@@ -1,3 +1,5 @@
+local key = require("mmrzax.utils").keymap
+
 vim.g.coc_node_path = os.getenv("NODE_PATH")
 
 vim.g.coc_global_extensions = {
@@ -14,18 +16,18 @@ vim.api.nvim_create_autocmd("CursorHold", {
 	command = 'silent call CocActionAsync("highlight")',
 })
 
-vim.api.nvim_set_keymap("i", "<c-space>", "coc#refresh()", { noremap = true, silent = true, expr = true })
+key("i", "<c-space>", "coc#refresh()", { expr = true })
 
-vim.api.nvim_set_keymap("n", "<leader>rn", "<Plug>(coc-rename)", { noremap = false })
+key("n", "<leader>rn", "<Plug>(coc-rename)", { noremap = false })
 
--- use K to show documentation in preview window
--- vim.cmd([[
--- nnoremap <silent> K :call <SID>show_documentation()<CR>
--- function! s:show_documentation()
---     if (index(['vim','help'], &filetype) >= 0)
---     execute 'h '.expand('<cword>')
---     else
---     call CocAction('doHover')
---     endif
--- endfunction
--- ]])
+-- use K to show documentation in preview window.
+key("n", "K", ":call ShowDocumentation()<CR>")
+vim.cmd([[
+function! ShowDocumentation()
+	if CocAction('hasProvider', 'hover')
+		call CocActionAsync('doHover')
+	else
+		call feedkeys('K', 'in')
+	endif
+endfunction
+]])
