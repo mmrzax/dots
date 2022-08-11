@@ -9,16 +9,12 @@
       }
     }
   },
-  "coc.preferences.formatOnSaveFiletypes": [
-    "go"
-  ],
-  "diagnostic.displayByAle": false,
-  "diagnostic.warningSign": "⚡",
-  "diagnostic.errorSign": "❌",
-  "diagnostic.hintSign": "💡",
-  "diagnostic.infoSign": "⚠️",
+  "coc.preferences.formatOnSaveFiletypes": ["go", "lua", "json", "ts", "js"],
   "diagnostic.enable": true,
-  "prettier.eslintIntegration": true,
+  "diagnostic.warningSign": "",
+  "diagnostic.errorSign": "",
+  "diagnostic.hintSign": "💡",
+  "diagnostic.infoSign": "",
   "prettier.tabWidth": 2,
   "diagnostic.refreshOnInsertMode": true,
   "prettier.singleQuote": true,
@@ -28,13 +24,7 @@
   "prettier.useTabs": false,
   "prettier.arrowParens": "always",
   "html.autoClosingTags": true,
-  "html.filetypes": [
-    "html",
-    "handlebars",
-    "htmldjango",
-    "blade",
-    "hbs"
-  ],
+  "html.filetypes": ["html", "handlebars", "htmldjango", "blade", "hbs"],
   "explorer.icon.enableNerdfont": true,
   "explorer.width": 30,
   "explorer.file.showHiddenFiles": true,
