@@ -1,25 +1,25 @@
 vim.g.mapleader = " "
 
-local util = require("util")
+local key = require("mmrzax.utils").keymap
 
 -- main
-util.inoremap("jk", "<ESC>")
-util.tnoremap("jk", "<C-\\><C-n>")
-util.nnoremap("<leader>`", ":terminal<CR>")
-util.nnoremap("<C-s>", ":w<CR>")
-util.nnoremap("<C-c>", ":bd<CR>")
-util.nnoremap("<C-c>jj", ":bd!<CR>")
-util.vnoremap(".", ":norm.<CR>")
+key("i", "jk", "<ESC>")
+key("t", "jk", "<C-\\><C-n>")
+key("n", "<leader>`", ":terminal<CR>")
+key("n", "<C-s>", ":w<CR>")
+key("n", "<C-c>", ":bd<CR>")
+key("n", "<C-c>jj", ":bd!<CR>")
+key("v", ".", ":norm.<CR>")
 
 -- paste
-util.inoremap("<C-p>j", '<C-r>"')
-util.inoremap("<C-p>k", "<C-r>*")
+key("i", "<C-p>j", '<C-r>"')
+key("i", "<C-p>k", "<C-r>*")
 
 -- moving between windows
-util.map("", "<leader>h", ":wincmd h<CR>")
-util.map("", "<leader>j", ":wincmd j<CR>")
-util.map("", "<leader>k", ":wincmd k<CR>")
-util.map("", "<leader>l", ":wincmd l<CR>")
+key("", "<leader>h", ":wincmd h<CR>", { noremap = false })
+key("", "<leader>j", ":wincmd j<CR>", { noremap = false })
+key("", "<leader>k", ":wincmd k<CR>", { noremap = false })
+key("", "<leader>l", ":wincmd l<CR>", { noremap = false })
 
 -- moving between buffers
 --util.nnoremap("<C-l>", ":bnext<CR>")

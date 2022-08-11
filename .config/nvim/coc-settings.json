@@ -9,24 +9,19 @@
       }
     }
   },
-  "coc.preferences.formatOnSaveFiletypes": ["go", "lua", "json", "ts", "js"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "go",
+    "lua",
+    "json",
+    "typescript",
+    "javascript",
+    "html"
+  ],
   "diagnostic.enable": true,
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
   "diagnostic.hintSign": "💡",
   "diagnostic.infoSign": "",
-  "prettier.tabWidth": 2,
   "diagnostic.refreshOnInsertMode": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-  "prettier.bracketSpacing": true,
-  "prettier.semi": true,
-  "prettier.useTabs": false,
-  "prettier.arrowParens": "always",
-  "html.autoClosingTags": true,
-  "html.filetypes": ["html", "handlebars", "htmldjango", "blade", "hbs"],
-  "explorer.icon.enableNerdfont": true,
-  "explorer.width": 30,
-  "explorer.file.showHiddenFiles": true,
   "Lua.telemetry.enable": false
 }

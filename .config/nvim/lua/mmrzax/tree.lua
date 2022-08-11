@@ -1,5 +1,5 @@
-local util = require("util")
+local key = require("mmrzax.utils").keymap
 
 require("nvim-tree").setup()
 
-util.nmap("<leader>nn", ":NvimTreeToggle<CR>")
+key("n", "<leader>nn", ":NvimTreeToggle<CR>", { noremap = false })
