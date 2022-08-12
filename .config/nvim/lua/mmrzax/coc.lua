@@ -5,6 +5,7 @@ vim.g.coc_node_path = os.getenv("NODE_PATH")
 vim.g.coc_global_extensions = {
 	"coc-yaml",
 	"coc-tsserver",
+	"coc-deno",
 	"coc-json",
 	"coc-html",
 	"coc-sumneko-lua",
