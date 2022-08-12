@@ -20,7 +20,7 @@
   "diagnostic.enable": true,
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
-  "diagnostic.hintSign": "💡",
+  "diagnostic.hintSign": "",
   "diagnostic.infoSign": "",
   "diagnostic.refreshOnInsertMode": true,
   "Lua.telemetry.enable": false
