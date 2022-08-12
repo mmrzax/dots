@@ -48,7 +48,7 @@ output HDMI-A-1 pos 0 0 res 1366x768 bg ~/.wallpapers/wallhaven-57joz1_1366x768.
 
 	# Start a file manager
 	#bindsym $mod+u exec $files
-	bindsym $mod+u exec $term --hold $files
+	bindsym $mod+u exec $term --command $files
 
     # Kill focused window
     bindsym $mod+Shift+q kill
