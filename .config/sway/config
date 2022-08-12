@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term alacritty
+set $term kitty
 
 # File Manager
 set $files ranger
@@ -47,8 +47,9 @@ output HDMI-A-1 pos 0 0 res 1366x768 bg ~/.wallpapers/wallhaven-57joz1_1366x768.
     bindsym $mod+grave exec $term
 
 	# Start a file manager
-	#bindsym $mod+u exec $files
-	bindsym $mod+u exec $term --command $files
+	# bindsym $mod+u exec $files
+	# bindsym $mod+u exec $term --command $files
+	bindsym $mod+u exec $term $files
 
     # Kill focused window
     bindsym $mod+Shift+q kill
