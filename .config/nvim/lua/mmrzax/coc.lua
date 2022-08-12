@@ -8,8 +8,6 @@ vim.g.coc_global_extensions = {
 	"coc-deno",
 	"coc-json",
 	"coc-html",
-	"coc-sumneko-lua",
-	"coc-stylua",
 }
 
 -- highlight the symbol and its references when holding the cursor
