@@ -15,7 +15,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require("packer").startup(function()
-	-- packer itself
 	use({
 		"wbthomason/packer.nvim",
 	})
@@ -30,7 +29,7 @@ return require("packer").startup(function()
 	use({
 		"nvim-telescope/telescope.nvim",
 		branch = "0.1.x",
-		requires = { { "nvim-lua/plenary.nvim" } },
+		requires = { "nvim-lua/plenary.nvim" },
 		config = function()
 			require("mmrzax.telescope")
 		end,
@@ -95,7 +94,7 @@ return require("packer").startup(function()
 	use({
 		"akinsho/bufferline.nvim",
 		tag = "v2.*",
-		requires = "kyazdani42/nvim-web-devicons",
+		requires = { "kyazdani42/nvim-web-devicons" },
 		config = function()
 			require("mmrzax.bufferline")
 		end,
@@ -112,6 +111,14 @@ return require("packer").startup(function()
 		"numToStr/Comment.nvim",
 		config = function()
 			require("Comment").setup()
+		end,
+	})
+
+	use({
+		"ray-x/go.nvim",
+		requires = { "ray-x/guihua.lua" },
+		config = function()
+			require("go").setup()
 		end,
 	})
 end)

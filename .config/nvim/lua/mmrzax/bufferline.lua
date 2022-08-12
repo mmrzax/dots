@@ -1,7 +1,7 @@
 require("bufferline").setup({
 	options = {
 		mode = "buffers",
-		show_close_icon = true,
+		show_buffer_close_icons = false,
 		diagnostics = "coc",
 		separator_style = "thick",
 		offsets = {

@@ -39,5 +39,5 @@ key(
 key(
 	"n",
 	"<leader>fts",
-	'<cmd>lua require("telescope.treesitter").treesitter(require("telescope.themes").get_dropdown({}))<cr>'
+	'<cmd>lua require("telescope.builtin").treesitter(require("telescope.themes").get_dropdown({}))<cr>'
 )
