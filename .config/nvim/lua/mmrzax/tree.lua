@@ -2,7 +2,7 @@ local key = require("mmrzax.utils").keymap
 
 require("nvim-tree").setup({
 	view = {
-		adaptive_size = true,
+		-- adaptive_size = true,
 		mappings = {
 			list = {
 				{ key = { "l", "<CR>", "2-LeftMouse" }, action = "edit" },
