@@ -2,12 +2,12 @@
 require("mmrzax.packer")
 
 -- Main
-require("mmrzax.options")
+require("mmrzax.setting")
 require("mmrzax.key")
 
 -- Plugin
--- require("mmrzax.lspconfig")
-require("mmrzax.coc")
+require("mmrzax.lspconfig")
+-- require("mmrzax.coc")
 require("mmrzax.treesitter")
 require("mmrzax.telescope")
 require("mmrzax.lualine")

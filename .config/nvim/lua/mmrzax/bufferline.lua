@@ -2,8 +2,7 @@ require("bufferline").setup({
 	options = {
 		mode = "buffers",
 		show_buffer_close_icons = false,
-		diagnostics = "coc",
-		separator_style = "thick",
+		diagnostics = "nvim_lsp",
 		offsets = {
 			{
 				filetype = "NvimTree",

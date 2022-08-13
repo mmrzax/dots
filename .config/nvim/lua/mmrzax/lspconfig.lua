@@ -61,7 +61,7 @@ require("lspconfig")["sumneko_lua"].setup({
 				version = "LuaJIT",
 			},
 			diagnostics = {
-				globals = { "vim", "use" },
+				globals = { "vim", },
 			},
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true),

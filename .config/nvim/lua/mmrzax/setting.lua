@@ -14,6 +14,7 @@ vim.opt.visualbell = true -- use visual bell (no beeping)
 vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
+vim.opt.completeopt="menu"
 
 -- line
 vim.opt.number = true
