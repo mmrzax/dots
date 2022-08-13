@@ -40,20 +40,11 @@ local lsp_flags = {
 	debounce_text_changes = 150,
 }
 
-require("lspconfig")["gopls"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-})
+require("lspconfig")["gopls"].setup({ on_attach = on_attach, flags = lsp_flags, })
 
-require("lspconfig")["pyright"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-})
+require("lspconfig")["pyright"].setup({ on_attach = on_attach, flags = lsp_flags, })
 
-require("lspconfig")["tsserver"].setup({
-	on_attach = on_attach,
-	flags = lsp_flags,
-})
+require("lspconfig")["tsserver"].setup({ on_attach = on_attach, flags = lsp_flags, })
 
 require("lspconfig")["sumneko_lua"].setup({
 	on_attach = on_attach,
@@ -68,9 +59,17 @@ require("lspconfig")["sumneko_lua"].setup({
 			},
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true),
+				checkThirdParty = false
 			},
 			telemetry = {
 				enable = false,
+			},
+			format = {
+				enable = true,
+				defaultConfig = {
+					indent_style = "space",
+					indent_size = "2",
+				}
 			},
 		},
 	},
