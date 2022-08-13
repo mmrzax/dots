@@ -14,7 +14,8 @@
 			],
 			"initializationOptions": {
 				"usePlaceholders": true
-			}
+			},
+			"trace.server": "verbose"
 		},
 		"lua": {
 			"command": "lua-language-server",
