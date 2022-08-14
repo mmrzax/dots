@@ -27,7 +27,7 @@ key("n", "gr", "<Plug>(coc-references)", { noremap = false })
 
 key("x", "<leader>f", "<Plug>(coc-format-selected)", { noremap = false })
 
-key("n", "<leader>f", "<Plug>(coc-format-selected)", { noremap = false })
+key("n", "<leader>f", "<Plug>(coc-format)", { noremap = false })
 
 key("n", "K", ":call ShowDocumentation()<CR>")
 

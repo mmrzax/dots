@@ -18,7 +18,7 @@ require("bufferline").setup({
 	options = {
 		mode = "buffers",
 		show_buffer_close_icons = false,
-		diagnostics = "nvim_lsp",
+		diagnostics = "coc",
 		diagnostics_indicator = function(_, _, diag)
 			local s = {}
 			for _, severity in ipairs(severities) do
