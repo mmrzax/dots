@@ -1,3 +1,5 @@
+local indent = 4
+
 -- main
 vim.opt.syntax = "on"
 vim.opt.hidden = true
@@ -15,6 +17,8 @@ vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.completeopt = "menu"
+vim.opt.clipboard = "unnamedplus" -- sync with system clipboard
+vim.opt.list = true -- Show some invisible characters (tabs...
 
 -- line
 vim.opt.number = true
@@ -30,11 +34,12 @@ vim.opt.ignorecase = true -- always case-insensitive
 vim.opt.incsearch = true -- searches for strings incrementally
 
 -- indent
+vim.cmd(":filetype indent on")
 vim.cmd("filetype plugin indent on")
 vim.opt.autoindent = true -- auto-indent new lines
 vim.opt.smartindent = true -- enable smart-indent
 vim.opt.cindent = true -- for new line indent
 -- vim.opt.expandtab = true -- use spaces instead of tabs
-vim.opt.shiftwidth = 4 -- when indenting with '>', use 2 spaces width
-vim.opt.tabstop = 4 -- show existing tab with 2 spaces width
--- vim.opt.softtabstop = 2 -- number of spaces per Tab
+vim.opt.shiftwidth = indent -- when indenting with '>', use 2 spaces width
+vim.opt.tabstop = indent -- number of spaces tabs count for
+-- vim.opt.softtabstop = indent -- number of spaces per Tab
