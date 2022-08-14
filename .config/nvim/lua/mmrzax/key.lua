@@ -5,6 +5,7 @@ local key = require("mmrzax.utils").keymap
 -- main
 key("i", "jk", "<ESC>")
 key("t", "jk", "<C-\\><C-n>")
+key("n", "<Tab>", "<C-w>w")
 key("n", "<leader>`", ":terminal<CR>")
 key("n", "<C-s>", ":w<CR>")
 key("n", "<C-c>", ":bd<CR>")

@@ -33,6 +33,7 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 	vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+	vim.keymap.set('i', '<C-space>', '<C-x><C-o>', bufopts)
 end
 
 local lsp_flags = {
@@ -69,6 +70,8 @@ require("lspconfig")["sumneko_lua"].setup({
 				defaultConfig = {
 					indent_style = "space",
 					indent_size = "2",
+					quote_style = "double",
+					insert_final_newline = true,
 				}
 			},
 		},

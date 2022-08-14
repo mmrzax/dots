@@ -1,4 +1,5 @@
 return require("packer").startup(function(use)
+
 	use({ "wbthomason/packer.nvim" })
 
 	use({ "neovim/nvim-lspconfig" })
@@ -30,4 +31,5 @@ return require("packer").startup(function(use)
 	use({ "ray-x/go.nvim", requires = { "ray-x/guihua.lua" } })
 
 	use({ "tpope/vim-fugitive" })
+
 end)
