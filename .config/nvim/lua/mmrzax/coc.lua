@@ -1,4 +1,6 @@
-local key = require("mmrzax.utils").keymap
+local key = vim.api.nvim_set_keymap
+local default_opts = { noremap = true, silent = true }
+local expr_opts = { noremap = true, expr = true, silent = true }
 
 vim.g.coc_node_path = os.getenv("NODE_PATH")
 
@@ -9,27 +11,27 @@ vim.g.coc_global_extensions = {
 	"coc-html",
 }
 
-key("i", "<c-space>", "coc#refresh()", { expr = true })
+key("i", "<c-space>", "coc#refresh()", expr_opts)
 
-key("n", "<leader>rn", "<Plug>(coc-rename)", { noremap = false })
+key("n", "<leader>rn", "<Plug>(coc-rename)", default_opts)
 
-key("n", "[g", "<Plug>(coc-diagnostic-prev)", { noremap = false })
+key("n", "[g", "<Plug>(coc-diagnostic-prev)", default_opts)
 
-key("n", "]g", "<Plug>(coc-diagnostic-next)", { noremap = false })
+key("n", "]g", "<Plug>(coc-diagnostic-next)", default_opts)
 
-key("n", "gd", "<Plug>(coc-definition)", { noremap = false })
+key("n", "gd", "<Plug>(coc-definition)", default_opts)
 
-key("n", "gy", "<Plug>(coc-type-definition)", { noremap = false })
+key("n", "gy", "<Plug>(coc-type-definition)", default_opts)
 
-key("n", "gi", "<Plug>(coc-implementation)", { noremap = false })
+key("n", "gi", "<Plug>(coc-implementation)", default_opts)
 
-key("n", "gr", "<Plug>(coc-references)", { noremap = false })
+key("n", "gr", "<Plug>(coc-references)", default_opts)
 
-key("x", "<leader>f", "<Plug>(coc-format-selected)", { noremap = false })
+key("x", "<leader>f", "<Plug>(coc-format-selected)", default_opts)
 
-key("n", "<leader>f", "<Plug>(coc-format)", { noremap = false })
+key("n", "<leader>f", "<Plug>(coc-format)", default_opts)
 
-key("n", "K", ":call ShowDocumentation()<CR>")
+key("n", "K", ":call ShowDocumentation()<CR>", default_opts)
 
 
 vim.cmd([[
