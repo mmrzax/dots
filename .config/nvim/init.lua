@@ -1,4 +1,4 @@
-require("plugin")
-require("setting")
-require("key")
-require("theme")
+require("plugins")
+require("settings")
+require("keys")
+require("themes")
