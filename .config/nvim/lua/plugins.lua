@@ -58,6 +58,9 @@ function M.setup()
     use { "akinsho/bufferline.nvim", tag = "v2.*", requires = { "kyazdani42/nvim-web-devicons" },
       config = function() require("mmrzax.bufferline") end, }
 
+    use { "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim",
+      config = function() require("mmrzax.neogit") end, }
+
     use { "numToStr/Comment.nvim",
       config = function() require("Comment").setup() end, }
 
@@ -66,8 +69,6 @@ function M.setup()
 
     use { "folke/which-key.nvim",
       config = function() require("mmrzax.whichkey").setup() end, }
-
-    use { "tpope/vim-fugitive" }
 
     use { "lukas-reineke/indent-blankline.nvim" }
 
