@@ -5,10 +5,10 @@ local expr_opts = { noremap = true, expr = true, silent = true }
 vim.g.coc_node_path = os.getenv("NODE_PATH")
 
 vim.g.coc_global_extensions = {
-	"coc-yaml",
-	"coc-deno",
-	"coc-json",
-	"coc-html",
+  "coc-yaml",
+  "coc-deno",
+  "coc-json",
+  "coc-html",
 }
 
 key("i", "<c-space>", "coc#refresh()", expr_opts)

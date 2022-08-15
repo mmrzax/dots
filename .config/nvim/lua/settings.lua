@@ -11,6 +11,7 @@ vim.opt.background = "dark"
 vim.opt.cmdheight = 1
 vim.opt.showmode = false
 vim.opt.updatetime = 50
+vim.opt.timeoutlen = 300
 vim.opt.errorbells = false -- disable Beep or flash screen on errors
 vim.opt.visualbell = true -- use visual bell (no beeping)
 vim.opt.showtabline = 2
