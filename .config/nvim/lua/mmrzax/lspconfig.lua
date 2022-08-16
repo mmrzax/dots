@@ -50,13 +50,36 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-require("lspconfig")["gopls"].setup({ on_attach = on_attach, flags = lsp_flags, })
+-- gopls
+require("lspconfig").gopls.setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+  settings = {
+    gopls = {
+      usePlaceholders = true,
+      completeUnimported = true,
+      staticcheck = true,
+      analyses = {
+        unusedparams = true,
+      },
+    },
+  },
+})
 
-require("lspconfig")["pyright"].setup({ on_attach = on_attach, flags = lsp_flags, })
+-- pyright
+require("lspconfig").pyright.setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+})
 
-require("lspconfig")["tsserver"].setup({ on_attach = on_attach, flags = lsp_flags, })
+-- tsserver
+require("lspconfig").tsserver.setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+})
 
-require("lspconfig")["sumneko_lua"].setup({
+-- sumneko_lua
+require("lspconfig").sumneko_lua.setup({
   on_attach = on_attach,
   flags = lsp_flags,
   settings = {
