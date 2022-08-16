@@ -12,7 +12,7 @@ key("n", "<leader>`", ":terminal<CR>", default_opts)
 key("n", "<C-s>", ":w<CR>", default_opts)
 key("n", "<C-c>", ":bd<CR>", default_opts)
 key("n", "<C-c>jj", ":bd!<CR>", default_opts)
-key("v", ".", ":norm.<CR>", default_opts)
+-- key("v", ".", ":norm.<CR>", default_opts)
 
 -- paste
 -- key("i", "<C-p>j", '<C-r>"', default_opts)
