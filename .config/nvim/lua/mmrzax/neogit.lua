@@ -16,26 +16,25 @@ require("neogit").setup({
   -- Setting any section to `false` will make the section not render at all
   sections = {
     untracked = {
-      folded = true
+      folded = true,
     },
     unstaged = {
-      folded = true
+      folded = true,
     },
     staged = {
-      folded = true
+      folded = true,
     },
     stashes = {
-      folded = true
+      folded = true,
     },
     unpulled = {
-      folded = true
+      folded = true,
     },
     unmerged = {
-      folded = true
+      folded = true,
     },
     recent = {
-      folded = true
+      folded = true,
     },
   },
-
 })

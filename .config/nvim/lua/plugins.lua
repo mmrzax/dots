@@ -12,7 +12,7 @@ function M.setup()
     },
     display = {
       open_fn = function()
-        return require("packer.util").float { border = "rounded" }
+        return require("packer.util").float({ border = "rounded" })
       end,
     },
   }
@@ -21,79 +21,142 @@ function M.setup()
   -- run PackerCompile if there are changes in this file
   local function packer_init()
     local fn = vim.fn
-    local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+    local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
     if fn.empty(fn.glob(install_path)) > 0 then
-      packer_bootstrap = fn.system {
+      packer_bootstrap = fn.system({
         "git",
         "clone",
         "--depth",
         "1",
         "https://github.com/wbthomason/packer.nvim",
         install_path,
-      }
-      vim.cmd [[packadd packer.nvim]]
+      })
+      vim.cmd([[packadd packer.nvim]])
     end
-    vim.cmd "autocmd BufWritePost plugins.lua source <afile> | PackerCompile"
+    vim.cmd("autocmd BufWritePost plugins.lua source <afile> | PackerCompile")
   end
 
   -- Plugins
   local function plugins(use)
+    use({ "wbthomason/packer.nvim" })
 
-    use { "wbthomason/packer.nvim" }
-
-    use { "neovim/nvim-lspconfig", as = "nvim-lspconfig",
-      config = function() require("mmrzax.lspconfig") end, }
+    use({
+      "neovim/nvim-lspconfig",
+      as = "nvim-lspconfig",
+      config = function()
+        require("mmrzax.lspconfig")
+      end,
+    })
 
     -- use { "neoclide/coc.nvim", branch = "release",
     -- 	config = function() require("mmrzax.coc") end, }
 
-    use { "nvim-treesitter/nvim-treesitter", as = "nvim-treesitter", event = "BufRead", opt = true, run = ":TSUpdate",
-      config = function() require("mmrzax.treesitter") end, }
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      as = "nvim-treesitter",
+      event = "BufRead",
+      opt = true,
+      run = ":TSUpdate",
+      config = function()
+        require("mmrzax.treesitter")
+      end,
+    })
 
-    use { "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" },
-      config = function() require("mmrzax.telescope") end, }
+    use({
+      "nvim-telescope/telescope.nvim",
+      branch = "0.1.x",
+      requires = { "nvim-lua/plenary.nvim" },
+      config = function()
+        require("mmrzax.telescope")
+      end,
+    })
 
-    use { "kyazdani42/nvim-tree.lua", requires = { "kyazdani42/nvim-web-devicons" }, event = "BufWinEnter",
-      config = function() require("mmrzax.tree") end, }
+    use({
+      "kyazdani42/nvim-tree.lua",
+      requires = { "kyazdani42/nvim-web-devicons" },
+      event = "BufWinEnter",
+      config = function()
+        require("mmrzax.tree")
+      end,
+    })
 
-    use { "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" },
+    use({
+      "nvim-lualine/lualine.nvim",
+      requires = { "kyazdani42/nvim-web-devicons" },
       after = "nvim-treesitter",
-      config = function() require("mmrzax.lualine") end, }
+      config = function()
+        require("mmrzax.lualine")
+      end,
+    })
 
-    use { "akinsho/bufferline.nvim", tag = "v2.*", requires = { "kyazdani42/nvim-web-devicons" },
-      config = function() require("mmrzax.bufferline") end, }
+    use({
+      "akinsho/bufferline.nvim",
+      tag = "v2.*",
+      requires = { "kyazdani42/nvim-web-devicons" },
+      config = function()
+        require("mmrzax.bufferline")
+      end,
+    })
 
-    use { "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim", cmd = "Neogit",
-      config = function() require("mmrzax.neogit") end, }
+    use({
+      "TimUntersberger/neogit",
+      requires = "nvim-lua/plenary.nvim",
+      cmd = "Neogit",
+      config = function()
+        require("mmrzax.neogit")
+      end,
+    })
 
-    use { "numToStr/Comment.nvim", opt = true, keys = { "gc", "gb", "gcc", "gbc" },
-      config = function() require("Comment").setup {} end, }
+    use({
+      "numToStr/Comment.nvim",
+      opt = true,
+      keys = { "gc", "gb", "gcc", "gbc" },
+      config = function()
+        require("Comment").setup({})
+      end,
+    })
 
-    use { "ray-x/go.nvim", requires = { "ray-x/guihua.lua" }, ft = "go",
-      config = function() require("go").setup() end, }
+    use({
+      "ray-x/go.nvim",
+      requires = { "ray-x/guihua.lua" },
+      ft = "go",
+      config = function()
+        require("go").setup()
+      end,
+    })
 
-    use { "folke/which-key.nvim", event = "VimEnter",
-      config = function() require("mmrzax.whichkey").setup() end, }
+    use({
+      "folke/which-key.nvim",
+      event = "VimEnter",
+      config = function()
+        require("mmrzax.whichkey").setup()
+      end,
+    })
 
-    use { "lukas-reineke/indent-blankline.nvim", event = "BufReadPre" }
+    use({ "lukas-reineke/indent-blankline.nvim", event = "BufReadPre" })
 
-    use { "nvim-lua/plenary.nvim", module = "plenary" }
+    use({ "nvim-lua/plenary.nvim", module = "plenary" })
 
-    use { "kyazdani42/nvim-web-devicons", module = "nvim-web-devicons",
-      config = function() require("nvim-web-devicons").setup { default = true } end, }
+    use({
+      "kyazdani42/nvim-web-devicons",
+      module = "nvim-web-devicons",
+      config = function()
+        require("nvim-web-devicons").setup({ default = true })
+      end,
+    })
 
-    use { "sainnhe/everforest", opt = true }
+    use({ "sainnhe/everforest", opt = true })
 
-    use { "morhetz/gruvbox", opt = true }
+    use({ "morhetz/gruvbox", opt = true })
 
-    use { "arcticicestudio/nord-vim", opt = true }
+    use({ "arcticicestudio/nord-vim", opt = true })
 
-    use { "folke/tokyonight.nvim", opt = true }
+    use({ "folke/tokyonight.nvim", opt = true })
 
-    use { "marko-cerovac/material.nvim" }
+    use({ "marko-cerovac/material.nvim" })
 
     if packer_bootstrap then
-      print "RESTART NEOVIM REQUIRED AFTER INSTALLATION!"
+      print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
       require("packer").sync()
     end
   end

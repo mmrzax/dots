@@ -33,7 +33,6 @@ key("n", "<leader>f", "<Plug>(coc-format)", default_opts)
 
 key("n", "K", ":call ShowDocumentation()<CR>", default_opts)
 
-
 vim.cmd([[
 autocmd CursorHold * silent call CocActionAsync('highlight')
 ]])
