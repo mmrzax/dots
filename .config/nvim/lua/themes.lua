@@ -27,8 +27,8 @@ vim.g.nord_uniform_diff_background = true
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_terminal_colors = true
 vim.g.tokyonight_italic_comments = true
-vim.g.tokyonight_italic_keywords = true
-vim.g.tokyonight_italic_functions = true
+vim.g.tokyonight_italic_keywords = false
+vim.g.tokyonight_italic_functions = false
 vim.g.tokyonight_italic_variables = false
 vim.g.tokyonight_transparent = false
 vim.g.tokyonight_hide_inactive_statusline = false
@@ -56,7 +56,7 @@ require("material").setup({
 
   italics = {
     comments = true, -- Enable italic comments
-    keywords = true, -- Enable italic keywords
+    keywords = false, -- Enable italic keywords
     functions = false, -- Enable italic functions
     strings = false, -- Enable italic strings
     variables = false, -- Enable italic variables
