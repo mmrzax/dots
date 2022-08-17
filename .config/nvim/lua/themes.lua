@@ -3,6 +3,8 @@ vim.g.everforest_background = "hard"
 vim.g.everforest_enable_italic = false
 vim.g.everforest_disable_italic_comment = true
 vim.g.everforest_sign_column_background = "none"
+vim.g.everforest_diagnostic_text_highlight = false
+vim.g.everforest_diagnostic_virtual_text = "colored"
 vim.g.everforest_better_performance = true
 
 -- gruvbox
