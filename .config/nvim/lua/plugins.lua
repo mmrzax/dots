@@ -145,7 +145,7 @@ function M.setup()
       end,
     })
 
-    use({ "sainnhe/everforest", opt = true })
+    use({ "sainnhe/everforest" })
 
     use({ "morhetz/gruvbox", opt = true })
 
