@@ -121,7 +121,7 @@ function M.setup()
       requires = { "ray-x/guihua.lua" },
       ft = "go",
       config = function()
-        require("go").setup()
+        require("mmrzax.go")
       end,
     })
 
