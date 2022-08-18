@@ -147,11 +147,11 @@ function M.setup()
 
     use({ "sainnhe/everforest" })
 
-    use({ "morhetz/gruvbox", opt = true })
+    use({ "morhetz/gruvbox" })
 
-    use({ "arcticicestudio/nord-vim", opt = true })
+    use({ "arcticicestudio/nord-vim" })
 
-    use({ "folke/tokyonight.nvim", opt = true })
+    use({ "folke/tokyonight.nvim" })
 
     use({ "marko-cerovac/material.nvim" })
 
