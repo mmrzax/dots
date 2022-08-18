@@ -9,14 +9,7 @@ key("i", "jk", "<ESC>", default_opts)
 key("t", "jk", "<C-\\><C-n>", default_opts)
 key("n", "<Tab>", "<C-w>w", default_opts)
 key("n", "<leader>`", ":terminal<CR>", default_opts)
-key("n", "<C-s>", ":w<CR>", default_opts)
-key("n", "<C-c>", ":bd<CR>", default_opts)
-key("n", "<C-c>jj", ":bd!<CR>", default_opts)
 -- key("v", ".", ":norm.<CR>", default_opts)
-
--- paste
--- key("i", "<C-p>j", '<C-r>"', default_opts)
--- key("i", "<C-p>k", "<C-r>*", default_opts)
 
 -- moving between windows
 key("", "<leader>h", ":wincmd h<CR>", default_opts)
