@@ -26,7 +26,7 @@ vim.opt.number = true
 vim.opt.wrap = false
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
+-- vim.opt.cursorcolumn = true
 
 -- search
 vim.opt.hlsearch = false -- disable highlight all search results
