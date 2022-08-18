@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term kitty
+set $term alacritty
 
 # File Manager
 set $files ranger
@@ -48,8 +48,8 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
 
 	# Start a file manager
 	# bindsym $mod+u exec $files
-	# bindsym $mod+u exec $term --command $files
-	bindsym $mod+u exec $term $files
+	bindsym $mod+u exec $term --command $files
+	# bindsym $mod+u exec $term $files
 
     # Kill focused window
     bindsym $mod+Shift+q kill
