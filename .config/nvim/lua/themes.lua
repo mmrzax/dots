@@ -56,7 +56,7 @@ require("material").setup({
   },
 
   italics = {
-    comments = true, -- Enable italic comments
+    comments = false, -- Enable italic comments
     keywords = false, -- Enable italic keywords
     functions = false, -- Enable italic functions
     strings = false, -- Enable italic strings
@@ -108,4 +108,4 @@ require("material").setup({
     mini = true,
   },
 })
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme material")
