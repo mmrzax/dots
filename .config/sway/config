@@ -211,7 +211,7 @@ bar {
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-	gsettings set $gnome-schema gtk-theme 'DeepOcean-BL'
+	gsettings set $gnome-schema gtk-theme 'Nordic-darker'
 	gsettings set $gnome-schema icon-theme 'Flat-Remix-Black-Dark'
 	#gsettings set $gnome-schema cursor-theme ''
 	#gsettings set $gnome-schema cursor-size ''
