@@ -38,24 +38,27 @@ function M.setup()
 
   -- Plugins
   local function plugins(use)
-    use({ "wbthomason/packer.nvim" })
+    use({
+      "wbthomason/packer.nvim",
+    })
 
     use({
       "neovim/nvim-lspconfig",
-      as = "nvim-lspconfig",
       config = function()
         require("mmrzax.lspconfig")
       end,
     })
 
-    -- use { "neoclide/coc.nvim", branch = "release",
-    -- 	config = function() require("mmrzax.coc") end, }
+    --[[ use({
+      "neoclide/coc.nvim",
+      branch = "release",
+      config = function()
+        require("mmrzax.coc")
+      end,
+    }) ]]
 
     use({
       "nvim-treesitter/nvim-treesitter",
-      as = "nvim-treesitter",
-      event = "BufRead",
-      opt = true,
       run = ":TSUpdate",
       config = function()
         require("mmrzax.treesitter")
@@ -74,7 +77,6 @@ function M.setup()
     use({
       "kyazdani42/nvim-tree.lua",
       requires = { "kyazdani42/nvim-web-devicons" },
-      event = "BufWinEnter",
       config = function()
         require("mmrzax.tree")
       end,
@@ -83,7 +85,6 @@ function M.setup()
     use({
       "nvim-lualine/lualine.nvim",
       requires = { "kyazdani42/nvim-web-devicons" },
-      after = "nvim-treesitter",
       config = function()
         require("mmrzax.lualine")
       end,
@@ -109,7 +110,6 @@ function M.setup()
 
     use({
       "numToStr/Comment.nvim",
-      opt = true,
       keys = { "gc", "gb", "gcc", "gbc" },
       config = function()
         require("Comment").setup({})
@@ -133,9 +133,15 @@ function M.setup()
       end,
     })
 
-    use({ "lukas-reineke/indent-blankline.nvim", event = "BufReadPre" })
+    use({
+      "lukas-reineke/indent-blankline.nvim",
+      event = "BufReadPre",
+    })
 
-    use({ "nvim-lua/plenary.nvim", module = "plenary" })
+    use({
+      "nvim-lua/plenary.nvim",
+      module = "plenary",
+    })
 
     use({
       "kyazdani42/nvim-web-devicons",
@@ -145,15 +151,25 @@ function M.setup()
       end,
     })
 
-    use({ "sainnhe/everforest" })
+    use({
+      "sainnhe/everforest",
+    })
 
-    use({ "morhetz/gruvbox" })
+    use({
+      "morhetz/gruvbox",
+    })
 
-    use({ "arcticicestudio/nord-vim" })
+    use({
+      "arcticicestudio/nord-vim",
+    })
 
-    use({ "folke/tokyonight.nvim" })
+    use({
+      "folke/tokyonight.nvim",
+    })
 
-    use({ "marko-cerovac/material.nvim" })
+    use({
+      "marko-cerovac/material.nvim",
+    })
 
     if packer_bootstrap then
       print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
