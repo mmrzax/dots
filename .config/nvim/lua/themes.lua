@@ -108,4 +108,4 @@ require("material").setup({
     mini = true,
   },
 })
-vim.cmd("colorscheme material")
+vim.cmd("colorscheme everforest")
