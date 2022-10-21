@@ -4,7 +4,7 @@
 {
 "layer": "top",
 "position": "top",
-"modules-left": ["tray", "cpu", "temperature", "memory", "battery", "disk", "pulseaudio", "custom/cap-left"],
+"modules-left": ["idle_inhibitor", "tray", "cpu", "temperature", "memory", "battery", "disk", "pulseaudio", "custom/cap-left"],
 "modules-center": ["sway/workspaces"],
 "modules-right": ["custom/cap-right", "custom/weather", "network", "clock", "custom/offswitch"],
 "sway/window": {
