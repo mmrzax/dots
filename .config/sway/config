@@ -38,7 +38,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 # Outputs
 output eDP-1 scale 1.0
 # output HDMI-A-1 scale 1.0
-output eDP-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/wallhaven-j3row5_1920x1080.png fill
+output eDP-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/HD wallpaper Nordic, landscape, mountains, trees, wood, forest, deer, Sun.jpeg fill
 # output HDMI-A-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
 
 # Key bindings
