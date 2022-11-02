@@ -1,160 +1,122 @@
-/* waybar style.css */
+@import "nord.css";
 
-/*@define-color bgcolor #9ce2f5;*/	/* background color */
-/*@define-color fgcolor #000000;*/  /* foreground color */
-/*@define-color charging #07fb05;*/ /* battery charging color */
-/*@define-color plugged #acfcad;*/  /* ac plugged color */
-/*@define-color critical #ff0000;*/ /* critical color */
-/*@define-color warning #f3f809;*/  /* warning color */
-/*@define-color hover #94a6e3;*/    /* mouse hover over workspace color */ 
-
-@define-color bgcolor #2e3440;	/* background color */
-@define-color fgcolor #d8dee9;  /* foreground color */
-@define-color charging #a3be8c; /* battery charging color */
-@define-color plugged #b48ead;  /* ac plugged color */
-@define-color critical #bf616a; /* critical color */
-@define-color warning #ebcb8b;  /* warning color */
-@define-color hover #4c566a;    /* mouse hover over workspace color */ 
-
-/* Reset all styles */
-* {
-	border: none;
-	border-radius: 0;
-	min-height: 0;
-	margin: 0;
-	padding: 0;
+window {
+    background-color: transparent;
 }
 
-#waybar {
-	background: transparent;
-	font-family: JetBrainsMono Nerd Font;
-	font-size: large;
-	color: @fgcolor;
+* {
+    font-family: Ubuntu Nerd Font;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 2px;
+	border-radius: 0;
+	color: @nord4;
+}
+
+/*
+* Left part
+*/
+#mode {
+    background-color: @nord13;
+    color: @nord0;
+    margin-left: 8px;
+    padding: 0px 6px;
+	border-radius: 8px;
 }
 
 #workspaces button {
-	padding-left: 10px;
-	padding-right: 10px;
-	color: @bgcolor;
+    margin-left: 8px;
+    background-color: @nord3;
+    padding: 0px 4px;
+    color: @nord6;
+    margin-top: 0;
+	border-radius: 8px;
 }
 
 #workspaces button.focused {
-	background: @bgcolor;
-	color: @fgcolor;
+    color: @nord0;
+    background-color: @nord8;
 }
 
-#workspaces button:hover {
-	background: @hover;
-	color: @fgcolor;
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
+#window {
+    margin-left: 10px;
+    color: @nord6;
+	font-family: Ubuntu;
+    font-weight: bold;
+    padding: 0px 5px;
 }
 
-#custom-cap-left, #custom-cap-right {
-	color: @bgcolor;
-	font-size: 24px;
-}
-
-#idle_inhibitor {
-	background: @bgcolor;
-	padding-left: 20px;
-	padding-right: 10px;
-}
-
-#custom-offswitch {
-	background: @bgcolor;
-	padding-right: 20px;
-	padding-left: 10px;
-}
-
+/*
+* Right part
+*/
+#pulseaudio,
+#backlight,
+#network,
+#cpu,
+#memory,
+#language,
+#battery,
+#clock,
 #tray,
-#custom-weather,
-#cpu, 
-#temperature, 
-#memory, 
-#pulseaudio, 
-#disk,
-#battery, 
-#clock, 
-#network {
-	background: @bgcolor;
-	padding-left: 10px;
-	padding-right: 10px;
+#idle_inhibitor {
+    background-color: @nord0;
+    padding: 0px 8px;
+    color: @nord6;
 }
 
-#disk.critical {
-		color: @critical;
+#backlight,
+#language,
+#battery,
+#clock,
+#idle_inhibitor {
+    margin-right: 8px;
 }
 
-#temperature.critical {                                                           
-		color: @critical;                                                    
+#pulseaudio,
+#network,
+#clock,
+#tray {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
-#cpu.critical {                                                           
-		color: @critical;                                                    
+#backlight,
+#battery,
+#clock,
+#idle_inhibitor {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
-#memory.critical {                                                           
-		color: @critical;                                                    
+#pulseaudio.muted {
+    background-color: @nord13;
+    color: @nord0;
 }
 
-@keyframes blink1 {                                                                
-	to {
-		color: @plugged;
-	}
-}
-
-#battery.plugged {
-background-color: @bgcolor;
-		animation-name: blink1;                                                          
-		animation-duration: 0.5s;                                                       
-		animation-timing-function: linear;                                              
-		animation-iteration-count: infinite;                                            
-		animation-direction: alternate;
-}
-
-@keyframes blink2 {
-	to {
-		background-color: @charging;
-	}
+#network.disabled,
+#network.disconnected {
+    background-color: @nord13;
+	color: @nord0;
 }
 
 #battery.charging {
-/*  background-color: @bgcolor; */
-		animation-name: blink2;                                                          
-		animation-duration: 2.0s;                                                       
-		animation-timing-function: ease-in-out;                                              
-		animation-iteration-count: infinite;                                            
-		animation-direction: alternate;
+	background-color: @nord14;
+	color: @nord0;
 }
 
-@keyframes blink3 {
-	to {
-		background-color: @warning;
-	}
+#battery.warning {
+    background-color: @nord13;
+    color: @nord0;
 }
 
-#battery.warning:not(.charging) {
-/*  background-color: @bgcolor; */
-  	animation-name: blink3;
-  	animation-duration: 0.7s;
-  	animation-timing-function: ease-in-out;
-  	animation-iteration-count: infinite;
-  	animation-direction: alternate;
+#battery.critical {
+    background-color: @nord11;
+    color: @nord0; 
 }
 
-@keyframes blink4 {
-	to {
-		background-color: @critical;
-	}
-}
-
-#battery.critical:not(.charging) {
- /* background-color: @bgcolor; */
-  	animation-name: blink4;
-  	animation-duration: 0.8s;
-  	animation-timing-function: ease-in-out;
-  	animation-iteration-count: infinite;
-  	animation-direction: alternate;
+#tray menu {
+    background-color: @nord0;
+    color: @nord6;
+    padding: 10px 5px;
+    border: 2px solid @nord1;
 }
