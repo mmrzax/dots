@@ -40,12 +40,10 @@ window {
 
 #window {
     margin-left: 10px;
-    color: @nord0;
+    color: @nord4;
 	font-family: Ubuntu;
     font-weight: bold;
     padding: 0px 5px;
-	background-color: @nord8;
-	border-radius: 8px;
 }
 
 /*
