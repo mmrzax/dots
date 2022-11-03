@@ -4,7 +4,8 @@
     "modules-center": [],
     "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "clock", "tray", "idle_inhibitor"],
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+        "format": "<span style=\"italic\">{}</span>",
+		"on-click": ""
     },
     "sway/window": {
         "max-length": 50
@@ -15,19 +16,23 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "  {:%Y-%m-%d   %H:%M}"
+        "format": "  {:%Y-%m-%d   %H:%M}",
+		"on-click": "chromium time.ir"
     },
     "cpu": {
         "format": "  {usage}%",
-        "tooltip": false
+        "tooltip": false,
+		"on-click": ""
     },
     "memory": {
-        "format": "  {}%"
+        "format": "  {}%",
+		"on-click": ""
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{icon}  {percent}%",
-        "format-icons": ["", ""]
+        "format-icons": ["", ""],
+		"on-click": "brightnessctl s 50%"
     },
     "battery": {
         "states": {
@@ -49,7 +54,8 @@
         // "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-ethernet": "  {ipaddr}",
         "format-linked": "  {ifname} (No IP)",
-        "format-disconnected": "⚠  Disconnected"
+        "format-disconnected": "⚠  Disconnected",
+		"on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

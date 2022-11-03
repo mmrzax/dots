@@ -10,7 +10,7 @@ window {
     font-weight: 900;
     margin-top: 2px;
 	border-radius: 0;
-	color: @nord4;
+	/* color: @nord4; */
 }
 
 /*
@@ -61,7 +61,7 @@ window {
 #idle_inhibitor {
     background-color: @nord0;
     padding: 0px 8px;
-    color: @nord6;
+    color: @nord0;
 }
 
 #backlight,
@@ -119,4 +119,25 @@ window {
     color: @nord6;
     padding: 10px 5px;
     border: 2px solid @nord1;
+}
+
+#pulseaudio,
+#backlight {
+	background-color: @nord14;
+}
+
+#network,
+#cpu,
+#memory,
+#battery {
+	background-color: @nord15;
+}
+
+#clock {
+	background-color: @nord12;
+}
+
+#tray,
+#idle_inhibitor {
+	background-color: @nord10;
 }
