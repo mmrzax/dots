@@ -1,4 +1,4 @@
-font pango:JetBrainsMono Nerd Font Bold 12
+font pango:Ubuntu Bold 12
 # Logo key
 set $mod Mod4
 
@@ -38,7 +38,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 # Outputs
 output eDP-1 scale 1.0
 # output HDMI-A-1 scale 1.0
-output eDP-1 pos 0 0 res 1920x1080 bg ~/.walls/wallhaven-e7kpl8_1920x1080.png fill
+output eDP-1 pos 0 0 res 1920x1080 bg ~/.walls/wallhaven-qz9eld_1920x1080.png fill
 # output HDMI-A-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
 
 # Key bindings
