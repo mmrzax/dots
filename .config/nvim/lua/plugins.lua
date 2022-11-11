@@ -186,6 +186,10 @@ function M.setup()
       "marko-cerovac/material.nvim",
     })
 
+    use({
+      "EdenEast/nightfox.nvim",
+    })
+
     if packer_bootstrap then
       print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
       require("packer").sync()
