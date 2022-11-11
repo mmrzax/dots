@@ -38,7 +38,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 # Outputs
 output eDP-1 scale 1.0
 # output HDMI-A-1 scale 1.0
-output eDP-1 pos 0 0 res 1920x1080 bg ~/.walls/wallhaven-572x71_1920x1080.png fill
+output eDP-1 pos 0 0 res 1920x1080 bg ~/.wa/07.png fill
 # output HDMI-A-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
 
 # Key bindings
@@ -211,7 +211,7 @@ bar {
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-	gsettings set $gnome-schema gtk-theme 'Nordic-darker'
+	gsettings set $gnome-schema gtk-theme 'DeepOcean-B'
 	gsettings set $gnome-schema icon-theme 'Flat-Remix-Black-Dark'
 	#gsettings set $gnome-schema cursor-theme ''
 	#gsettings set $gnome-schema cursor-size ''
