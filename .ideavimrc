@@ -1,3 +1,5 @@
+set ideajoin
+
 let mapleader = " "
 
 inoremap jk <ESC>
