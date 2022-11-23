@@ -196,7 +196,7 @@ bar {
 # Startup Apps
 
 	exec lxsession &
-	exec clash &
+	# exec clash &
 	exec nm-applet --indicator &
 
 # Gaps
