@@ -3,9 +3,8 @@ let mapleader = " "
 inoremap jk <ESC>
 tnoremap jk <C-\><C-n> 
 nnoremap <leader>` :terminal<CR>
-nnoremap <C-s> :w<CR>
-nnoremap <C-c> :bd<CR>
-nnoremap <C-c>jj :bd!<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :bd<CR>
 
 " Paste
 inoremap <C-p>j <C-r>"
