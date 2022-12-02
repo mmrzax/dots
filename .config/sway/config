@@ -36,10 +36,15 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 	}
 
 # Outputs
-output eDP-1 scale 1.0
+# HDMI
 # output HDMI-A-1 scale 1.0
-output eDP-1 pos 0 0 res 1920x1080 bg ~/.wa/07.png fill
 # output HDMI-A-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
+
+# Monitor
+output eDP-1 scale 1.0
+# output eDP-1 pos 0 0 res 1920x1080 bg ~/.wa/01.png fill
+set $wp_path $HOME/.rn/
+output eDP-1 pos 0 0 res 1920x1080 bg `find $wp_path -type f | shuf -n 1` fill
 
 # Key bindings
 
