@@ -58,7 +58,8 @@ window {
 #battery,
 #clock,
 #tray,
-#idle_inhibitor {
+#idle_inhibitor,
+#custom-logout {
     background-color: @nord0;
     padding: 0px 8px;
     color: @nord0;
@@ -68,7 +69,7 @@ window {
 #language,
 #battery,
 #clock,
-#idle_inhibitor {
+#custom-logout {
     margin-right: 8px;
 }
 
@@ -83,7 +84,7 @@ window {
 #backlight,
 #battery,
 #clock,
-#idle_inhibitor {
+#custom-logout {
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 }
@@ -138,6 +139,7 @@ window {
 }
 
 #tray,
-#idle_inhibitor {
+#idle_inhibitor,
+#custom-logout {
 	background-color: @nord10;
 }

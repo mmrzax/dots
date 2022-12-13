@@ -2,7 +2,7 @@
     "height": 35, 
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "clock", "tray", "idle_inhibitor"],
+    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "clock", "tray", "idle_inhibitor", "custom/logout"],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>",
 		"on-click": ""
@@ -83,5 +83,11 @@
 			"activated": "",
 			"deactivated": "",
 		},
-}
+},
+	"custom/logout": {
+	  "tooltip": false,
+	  "format": "﫼",
+	  "interval": "once",
+	  "on-click": "swaynag -t warning -f Ubutnu -m 'Do You Want to Exit Sway?' -B 'YES' 'swaymsg exit'",
+	}
 }
