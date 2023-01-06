@@ -111,4 +111,4 @@ require('material').setup({
     custom_highlights = {}, -- Overwrite highlights with your own
 })
 
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme material")
