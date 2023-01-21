@@ -3836,7 +3836,7 @@ vout=any
 #meta-url=
 
 # File caching (ms) (integer)
-file-caching=500
+file-caching=1000
 
 # Live capture caching (ms) (integer)
 #live-caching=300
