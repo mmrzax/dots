@@ -25,6 +25,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 		tap enabled
 		natural_scroll enabled
 		middle_emulation enabled
+		pointer_accel 0.5
 	}
 
 	input type:keyboard {
@@ -43,7 +44,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 # Monitor
 set $wp_path $HOME/.rn/
 output eDP-1 scale 1.0
-output eDP-1 pos 0 0 res 1920x1080 bg $wp_path/04.png fill
+output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
 # output eDP-1 pos 0 0 res 1920x1080 bg `find $wp_path -type f | shuf -n 1` fill
 
 # Key bindings
