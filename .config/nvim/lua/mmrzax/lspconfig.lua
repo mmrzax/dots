@@ -78,7 +78,7 @@ require("lspconfig").tsserver.setup({
 })
 
 -- sumneko_lua
-require("lspconfig").sumneko_lua.setup({
+require("lspconfig").lua_ls.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   flags = lsp_flags,
