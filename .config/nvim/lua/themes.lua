@@ -121,4 +121,4 @@ require('nightfox').setup({
   }
 })
 
-vim.cmd("colorscheme material")
+vim.cmd("colorscheme everforest")
