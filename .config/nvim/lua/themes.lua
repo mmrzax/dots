@@ -121,4 +121,56 @@ require('nightfox').setup({
   }
 })
 
-vim.cmd("colorscheme catppuccin-mocha")
+require("catppuccin").setup({
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    no_italic = false, -- Force no italic
+    no_bold = false, -- Force no bold
+    styles = {
+        comments = { "italic" },
+        conditionals = { "italic" },
+        loops = { "italic" },
+        functions = {},
+        keywords = { "bold" },
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+    },
+    color_overrides = {},
+    custom_highlights = {},
+    integrations = {
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        telescope = true,
+        notify = false,
+        mini = false,
+        neogit = true,
+        treesitter = true,
+        which_key = true,
+        indent_blankline = {
+            enabled = true,
+            colored_indent_levels = false,
+        },
+        native_lsp = {
+            enabled = true,
+            virtual_text = {
+                errors = { "italic", "bold" },
+                hints = { "italic", "bold" },
+                warnings = { "italic", "bold" },
+                information = { "italic", "bold" },
+            },
+            underlines = {
+                errors = { "underline" },
+                hints = { "underline" },
+                warnings = { "underline" },
+                information = { "underline" },
+            },
+        },
+    },
+})
+
+vim.cmd("colorscheme catppuccin")
