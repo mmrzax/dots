@@ -190,6 +190,10 @@ function M.setup()
       "EdenEast/nightfox.nvim",
     })
 
+    use({
+      "catppuccin/nvim", as = "catppuccin"
+    })
+
     if packer_bootstrap then
       print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
       require("packer").sync()
