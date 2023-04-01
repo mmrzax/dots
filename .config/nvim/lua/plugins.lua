@@ -195,6 +195,10 @@ function M.setup()
       "catppuccin/nvim", as = "catppuccin"
     })
 
+    use({
+      "tpope/vim-fugitive",
+    })
+
     if packer_bootstrap then
       print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
       require("packer").sync()
