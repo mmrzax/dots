@@ -199,6 +199,10 @@ function M.setup()
       "tpope/vim-fugitive",
     })
 
+    use({
+      "rose-pine/neovim", as = "rose-pine"
+    })
+
     if packer_bootstrap then
       print("RESTART NEOVIM REQUIRED AFTER INSTALLATION!")
       require("packer").sync()
