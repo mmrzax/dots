@@ -107,6 +107,7 @@ function M.setup()
 
     use({
       "akinsho/bufferline.nvim",
+      after = "catppuccin",
       tag = "v2.*",
       requires = { "kyazdani42/nvim-web-devicons" },
       config = function()

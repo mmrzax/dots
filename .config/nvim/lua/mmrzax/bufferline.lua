@@ -3,9 +3,10 @@ local default_opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
 require("bufferline").setup({
+  highlights = require("catppuccin.groups.integrations.bufferline").get(),
   options = {
     numbers = "none",
-    show_close_icon = false,
+    show_close_icon = true,
     show_buffer_close_icons = false,
     show_tab_indicators = true,
     diagnostics = "nvim_lsp",
