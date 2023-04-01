@@ -101,7 +101,7 @@ function M.setup()
       "nvim-lualine/lualine.nvim",
       requires = { "kyazdani42/nvim-web-devicons" },
       config = function()
-        require("mmrzax.lualine")
+        require("mmrzax.evil_lualine")
       end,
     })
 
