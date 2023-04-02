@@ -149,10 +149,10 @@ function M.setup()
       end,
     })
 
-    use({
-      "lukas-reineke/indent-blankline.nvim",
-      event = "BufReadPre",
-    })
+    -- use({
+    --   "lukas-reineke/indent-blankline.nvim",
+    --   event = "BufReadPre",
+    -- })
 
     use({
       "nvim-lua/plenary.nvim",
