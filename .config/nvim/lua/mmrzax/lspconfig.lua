@@ -118,8 +118,8 @@ require("lspconfig").jsonls.setup({
 })
 
 -- pyright
-require 'lspconfig'.pyright.setup {
+require("lspconfig").pyright.setup({
   capabilities = capabilities,
   on_attach = on_attach,
   flags = lsp_flags,
-}
+})

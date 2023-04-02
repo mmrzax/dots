@@ -192,7 +192,8 @@ function M.setup()
     })
 
     use({
-      "catppuccin/nvim", as = "catppuccin"
+      "catppuccin/nvim",
+      as = "catppuccin",
     })
 
     use({
@@ -200,7 +201,8 @@ function M.setup()
     })
 
     use({
-      "rose-pine/neovim", as = "rose-pine"
+      "rose-pine/neovim",
+      as = "rose-pine",
     })
 
     if packer_bootstrap then
