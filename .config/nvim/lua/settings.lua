@@ -18,7 +18,7 @@ vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.completeopt = "menu"
-vim.opt.clipboard = "unnamedplus" -- sync with system clipboard
+-- vim.opt.clipboard = "unnamedplus" -- sync with system clipboard
 vim.opt.list = true -- Show some invisible characters (tabs...
 
 -- line

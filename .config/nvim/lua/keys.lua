@@ -1,45 +1,45 @@
-local key = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = true }
-local expr_opts = { noremap = true, expr = true, silent = true }
-
 vim.g.mapleader = " "
 
--- main
-key("i", "jk", "<ESC>", default_opts)
-key("t", "jk", "<C-\\><C-n>", default_opts)
-key("n", "<Tab>", "<C-w>w", default_opts)
-key("n", "<leader>`", ":terminal<CR>", default_opts)
+-- use jk instead of ESC in insert and terminal mode
+vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("t", "jk", "<C-\\><C-n>")
 
-key("v", "J", ":m '>+1<CR>gv=gv", default_opts)
-key("v", "K", ":m '<-2<CR>gv=gv", default_opts)
+-- I don't know but i want this
+vim.keymap.set("n", "<Tab>", "<C-w>w")
 
-key("n", "J", "mzJ`z", default_opts)
+-- Ommmmm sometimes it's hard to write :terminal
+vim.keymap.set("n", "<leader>`", ":terminal<CR>")
 
-key("n", "n", "nzzzv", default_opts)
-key("n", "N", "Nzzzv", default_opts)
+-- move highlighted lines
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-key("x", "<leader>p", [["_dP]], default_opts)
-key("n", "<leader>y", [["+y]], default_opts)
-key("v", "<leader>y", [["+y]], default_opts)
--- key("n", "<leader>Y", [["+Y]], default_opts)
-key("v", "<leader>d", [["_d]], default_opts)
-key("n", "<leader>d", [["_d]], default_opts)
+-- please don't move cursor when i use J
+vim.keymap.set("n", "J", "mzJ`z")
+
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- best keymaps in the Universe
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- key("v", ".", ":norm.<CR>", default_opts)
+-- vim.keymap.set("v", ".", ":norm.<CR>")
 
 -- moving between windows
-key("", "<leader>h", ":wincmd h<CR>", default_opts)
-key("", "<leader>j", ":wincmd j<CR>", default_opts)
-key("", "<leader>k", ":wincmd k<CR>", default_opts)
-key("", "<leader>l", ":wincmd l<CR>", default_opts)
+vim.keymap.set("", "<leader>h", ":wincmd h<CR>")
+vim.keymap.set("", "<leader>j", ":wincmd j<CR>")
+vim.keymap.set("", "<leader>k", ":wincmd k<CR>")
+vim.keymap.set("", "<leader>l", ":wincmd l<CR>")
 
 -- moving between buffers
--- key("n", "<C-l>", ":bnext<CR>", default_opts)
--- key("n", "<C-h>", ":bprev<CR>", default_opts)
+-- vim.keymap.set("n", "<C-l>", ":bnext<CR>")
+-- vim.keymap.set("n", "<C-h>", ":bprev<CR>")
 
 -- resize panes
-key("n", "<Left>", ":vertical resize +1<CR>", default_opts)
-key("n", "<Right>", ":vertical resize -1<CR>", default_opts)
-key("n", "<Up>", ":resize -1<CR>", default_opts)
-key("n", "<Down>", ":resize +1<CR>", default_opts)
+vim.keymap.set("n", "<Left>", ":vertical resize +1<CR>")
+vim.keymap.set("n", "<Right>", ":vertical resize -1<CR>")
+vim.keymap.set("n", "<Up>", ":resize -1<CR>")
+vim.keymap.set("n", "<Down>", ":resize +1<CR>")

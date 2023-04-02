@@ -1,7 +1,3 @@
-local key = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = true }
-local expr_opts = { noremap = true, expr = true, silent = true }
-
 require("bufferline").setup({
   -- highlights = require("catppuccin.groups.integrations.bufferline").get(),
   options = {
@@ -23,13 +19,13 @@ require("bufferline").setup({
 
 -- These commands will navigate through buffers in order regardless of which mode you are using
 -- e.g. if you change the order of buffers :bnext and :bprevious will not respect the custom ordering
-key("n", "<C-l>", ":BufferLineCycleNext<CR>", default_opts)
-key("n", "<C-h>", ":BufferLineCyclePrev<CR>", default_opts)
+vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>")
 
 -- These commands will move the current buffer backwards or forwards in the bufferline
-key("n", "<A-l>", ":BufferLineMoveNext<CR>", default_opts)
-key("n", "<A-h>", ":BufferLineMovePrev<CR>", default_opts)
+vim.keymap.set("n", "<A-l>", ":BufferLineMoveNext<CR>")
+vim.keymap.set("n", "<A-h>", ":BufferLineMovePrev<CR>")
 
 -- These commands will sort buffers by directory, language, or a custom criteria
-key("n", "<A-e>", ":BufferLineSortByExtension<CR>", default_opts)
-key("n", "<A-d>", ":BufferLineSortByDirectory<CR>", default_opts)
+vim.keymap.set("n", "<A-e>", ":BufferLineSortByExtension<CR>")
+vim.keymap.set("n", "<A-d>", ":BufferLineSortByDirectory<CR>")

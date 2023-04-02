@@ -1,7 +1,3 @@
-local key = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = true }
-local expr_opts = { noremap = true, expr = true, silent = true }
-
 require("nvim-tree").setup({
   view = {
     -- adaptive_size = true,
@@ -33,4 +29,4 @@ require("nvim-tree").setup({
   },
 })
 
-key("n", "<leader>nn", ":NvimTreeToggle<CR>", default_opts)
+vim.keymap.set("n", "<leader>nn", ":NvimTreeToggle<CR>")
