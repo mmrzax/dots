@@ -93,7 +93,7 @@ function M.setup()
       "kyazdani42/nvim-tree.lua",
       requires = { "kyazdani42/nvim-web-devicons" },
       config = function()
-        require("mmrzax.tree")
+        require("mmrzax.nvimtree")
       end,
     })
 
@@ -203,6 +203,21 @@ function M.setup()
     use({
       "rose-pine/neovim",
       as = "rose-pine",
+    })
+
+    use ({
+      "kiyoon/jupynium.nvim", run = "pip3 install --user .",
+      config = function()
+        require("mmrzax.jupynium")
+      end,
+    })
+
+    use ({
+      "rcarriga/nvim-notify",
+    })
+
+    use ({
+      "stevearc/dressing.nvim",
     })
 
     if packer_bootstrap then
