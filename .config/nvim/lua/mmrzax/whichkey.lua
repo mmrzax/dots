@@ -15,7 +15,7 @@ function M.setup()
     mode = "n", -- Normal mode
     prefix = "<leader>",
     buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-    silent = true, -- use `silent` when creating keymaps
+    silent = false, -- use `silent` when creating keymaps
     noremap = true, -- use `noremap` when creating keymaps
     nowait = false, -- use `nowait` when creating keymaps
   }
@@ -43,6 +43,26 @@ function M.setup()
     g = {
       name = "Git",
       s = { "<cmd>Neogit<CR>", "Status" },
+    },
+
+    a = {
+      name = "Jupynium",
+      a = {
+        name = "Attach",
+        s = {":JupyniumStartAndAttachToServer<Space>", "Start & Attach"},
+        a = {":JupyniumAttachToServer<Space>", "Attach"},
+      },
+      s = {
+        name = "Sync",
+        s = {":JupyniumStartSync<Space>", "Start Sync"},
+        S = {"<cmd>JupyniumStopSync<CR>", "Stop Sync"},
+      },
+      l = {
+        name = "Load",
+        l = {":JupyniumLoadFromIpynbTab<Space>", "Load"},
+        s = {":JupyniumLoadFromIpynbTabAndStartSync<Space>", "Load & Sync" },
+      },
+
     },
 
     t = ts_keys,
