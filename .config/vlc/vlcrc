@@ -2169,6 +2169,11 @@
 # UDP timeout (in ms) (integer)
 #netsync-timeout=500
 
+[lirc] # Infrared remote control interface
+
+# Change the lirc configuration file (string)
+#lirc-file=
+
 [oldrc] # Remote control interface
 
 # Show stream position (boolean)
@@ -3836,7 +3841,7 @@ vout=any
 #meta-url=
 
 # File caching (ms) (integer)
-file-caching=1000
+file-caching=10000
 
 # Live capture caching (ms) (integer)
 #live-caching=300
