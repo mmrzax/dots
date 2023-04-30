@@ -218,8 +218,8 @@ bar {
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'Nordic-darker'
-	gsettings set $gnome-schema icon-theme 'Zafiro-Nord-Black'
-	gsettings set $gnome-schema cursor-theme 'Nordic-cursors'
+	gsettings set $gnome-schema icon-theme 'Zafiro-Nord-Dark-Black'
+	# gsettings set $gnome-schema cursor-theme 'Nordic-cursors'
 	# gsettings set $gnome-schema cursor-size '20'
 	gsettings set $gnome-schema font-name 'Ubuntu 12'
     gsettings set $gnome-schema monospace-font-name 'JetBrainsMono Nerd Font 12'
