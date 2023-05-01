@@ -54,7 +54,7 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
 
 	# Start a file manager
 	# bindsym $mod+u exec $files
-	bindsym $mod+u exec $term --command $files
+	bindsym $mod+u exec $term $files
 	# bindsym $mod+u exec $term $files
 
     # Kill focused window
