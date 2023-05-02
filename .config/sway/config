@@ -57,6 +57,9 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
 	bindsym $mod+u exec $term $files
 	# bindsym $mod+u exec $term $files
 
+	# Take Screenshot
+	bindsym Print exec grim
+
     # Kill focused window
     bindsym $mod+Shift+q kill
 
