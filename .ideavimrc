@@ -1,4 +1,4 @@
-set ideajoin
+" set ideajoin
 
 let mapleader = " "
 
@@ -8,22 +8,31 @@ nnoremap <leader>` :terminal<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :bd<CR>
 
-" Paste
-inoremap <C-p>j <C-r>"
-inoremap <C-p>k <C-r>*
-
-" Moving Between Windows
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 
-" Moving Between Buffers
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprev<CR>
 
-" Resize Windows
 nnoremap <Left> :vertical resize +1<CR>
 nnoremap <Right> :vertical resize -1<CR>
 nnoremap <Up> :resize -1<CR>
 nnoremap <Down> :resize +1<CR>
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap J mzJ`z
+
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+xnoremap <leader>p "_dP 
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nmap <leader>Y "+Y
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
