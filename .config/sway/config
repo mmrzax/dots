@@ -225,7 +225,7 @@ exec_always {
 	# gsettings set $gnome-schema cursor-theme 'Nordic-cursors'
 	# gsettings set $gnome-schema cursor-size '20'
 	gsettings set $gnome-schema font-name 'Ubuntu 12'
-    gsettings set $gnome-schema monospace-font-name 'JetBrainsMono Nerd Font 12'
+    gsettings set $gnome-schema monospace-font-name 'JetBrainsMonoNL Nerd Font 12'
 }
 
 # Idle configuration
