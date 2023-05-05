@@ -20,18 +20,18 @@
 		"on-click": "chromium time.ir"
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": "  {usage}%",
         "tooltip": false,
 		"on-click": ""
     },
     "memory": {
-        "format": "  {}%",
+        "format": "  {}%",
 		"on-click": ""
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{icon}  {percent}%",
-        "format-icons": ["", ""],
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
 		"on-click": "brightnessctl s 50%"
     },
     "battery": {
