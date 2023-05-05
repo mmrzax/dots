@@ -41,7 +41,7 @@
             "critical": 20
         },
         "format": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "󰂄  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -51,9 +51,9 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "  ({essid} / {signalStrength}%)",
-        // "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-ethernet": "  {ipaddr}",
-        "format-linked": "  {ifname} (No IP)",
+        // "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰊗",
+        "format-ethernet": "󰊗  {ipaddr}",
+        "format-linked": "󰊗  {ifname} (No IP)",
         "format-disconnected": "⚠  Disconnected",
 		"on-click": "nm-connection-editor"
     },
@@ -61,14 +61,14 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{icon}  {volume}%      {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "  {icon}  {format_source}",
-        "format-muted": "   {format_source}",
+        "format-bluetooth-muted": "󰆪  {icon}  {format_source}",
+        "format-muted": "󰆪   {format_source}",
         "format-source": "  {volume}%",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋍",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
@@ -86,7 +86,7 @@
 },
 	"custom/logout": {
 	  "tooltip": false,
-	  "format": "﫼",
+	  "format": "󰗽",
 	  "interval": "once",
 	  "on-click": "swaynag -t warning -f Ubutnu -m 'Do You Want to Exit Sway?' -B 'YES' 'swaymsg exit'",
 	}
