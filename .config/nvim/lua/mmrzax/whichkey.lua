@@ -45,32 +45,8 @@ function M.setup()
       s = { "<cmd>Neogit<CR>", "Status" },
     },
 
-    a = {
-      name = "Jupynium",
-      a = {
-        name = "Attach",
-        s = {":JupyniumStartAndAttachToServer<Space>", "Start & Attach"},
-        a = {":JupyniumAttachToServer<Space>", "Attach"},
-      },
-      s = {
-        name = "Sync",
-        s = {":JupyniumStartSync<Space>", "Start Sync"},
-        S = {"<cmd>JupyniumStopSync<CR>", "Stop Sync"},
-      },
-      l = {
-        name = "Load",
-        l = {":JupyniumLoadFromIpynbTab<Space>", "Load"},
-        s = {":JupyniumLoadFromIpynbTabAndStartSync<Space>", "Load & Sync" },
-      },
-    },
-
-    x = {"<cmd>JupyniumExecuteSelectedCells<CR>", "Execute Selected Cells"},
-    cc = {"<cmd>JupyniumClearSelectedCellsOutputs<CR>", "Clear Selected Cells"},
-    js = {"<cmd>JupyniumScrollToCell<CR>", "Scroll to Cell"},
-    kk = {"<cmd>JupyniumKernelHover<CR>", "Hover"},
-    jo = {"<cmd>JupyniumToggleSelectedCellsOutputsScroll<CR>", "Toggle output scroll"},
-
     t = ts_keys,
+
   }
 
   whichkey.setup(conf)

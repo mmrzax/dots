@@ -206,13 +206,6 @@ function M.setup()
     })
 
     use ({
-      "kiyoon/jupynium.nvim", run = "pip3 install --user .",
-      config = function()
-        require("mmrzax.jupynium")
-      end,
-    })
-
-    use ({
       "rcarriga/nvim-notify",
     })
 
