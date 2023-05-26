@@ -4,8 +4,9 @@ window {
     border-radius: 0px;
     border: 2px solid #eb6f92;
     color: #e0def4;
-    font-family: 'GoMono Nerd Font';
+    font-family: 'Ubuntu Nerd Font Propo';
     font-size: 20px;
+	font-weight: bold;
 }
 
 #input {

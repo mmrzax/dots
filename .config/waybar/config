@@ -1,5 +1,5 @@
 {
-    "height": 35, 
+    "height": 40, 
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
     "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "clock", "tray", "idle_inhibitor", "custom/logout"],
