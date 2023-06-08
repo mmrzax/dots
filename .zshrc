@@ -38,6 +38,7 @@ export PF_COL3=1
 
 
 export LANG=en_US.UTF-8
+export XDG_CURRENT_DESKTOP=sway
 export GOPATH="$HOME/go"
 export GOROOT="/usr/lib/go"
 export PATH="$HOME/bin:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin:$PATH"

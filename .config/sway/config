@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term kitty
+set $term alacritty
 
 # File Manager
 set $files ranger
@@ -53,9 +53,8 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
     bindsym $mod+grave exec $term
 
 	# Start a file manager
-	# bindsym $mod+u exec $files
-	bindsym $mod+u exec $term $files
 	# bindsym $mod+u exec $term $files
+	bindsym $mod+u exec $term --command $files
 
 	# Take Screenshot
 	bindsym Print exec grim
@@ -204,8 +203,8 @@ bar {
 
 # Startup Apps
 
-	exec lxsession &
-	# exec clash &
+	exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+	# exec lxsession &
 	exec nm-applet --indicator &
 
 # Gaps
@@ -236,3 +235,6 @@ exec swayidle -w \
 		 before-sleep 'swaylock -f -c 000000'
 
 include /etc/sway/config.d/*
+
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
