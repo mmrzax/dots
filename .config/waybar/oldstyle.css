@@ -1,0 +1,151 @@
+@import "nord.css";
+
+window {
+    background-color: transparent;
+}
+
+* {
+    font-family: Ubuntu Nerd Font;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 2px;
+	border-radius: 0;
+	/* color: @nord4; */
+}
+
+/*
+* Left part
+*/
+#mode {
+    background-color: @nord13;
+    color: @nord0;
+    margin-left: 8px;
+    padding: 0px 6px;
+	border-radius: 8px;
+}
+
+#workspaces button {
+    margin-left: 8px;
+    /* background-color: @nord3; */
+    background-color: @nord0;
+    padding: 0px 4px;
+    color: @nord4;
+    margin-top: 0;
+	border-radius: 8px;
+}
+
+#workspaces button.focused {
+    color: @nord0;
+    /* background-color: @nord8; */
+	background-color: @nord13
+}
+
+#window {
+    margin-left: 10px;
+    color: @nord4;
+	font-family: Ubuntu;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+/*
+* Right part
+*/
+#pulseaudio,
+#backlight,
+#network,
+#cpu,
+#memory,
+#language,
+#battery,
+#clock,
+#tray,
+#idle_inhibitor,
+#custom-logout {
+    background-color: @nord0;
+    padding: 0px 8px;
+    color: @nord4;
+}
+
+#backlight,
+#language,
+#battery,
+#clock,
+#custom-logout {
+    margin-right: 8px;
+}
+
+#pulseaudio,
+#network,
+#clock,
+#tray {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#backlight,
+#battery,
+#clock,
+#custom-logout {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#pulseaudio.muted {
+    background-color: @nord13;
+    color: @nord0;
+}
+
+#network.disabled,
+#network.disconnected {
+    background-color: @nord13;
+	color: @nord0;
+}
+
+#battery.charging {
+	background-color: @nord14;
+	color: @nord0;
+}
+
+#battery.warning {
+    background-color: @nord13;
+    color: @nord0;
+}
+
+#battery.critical {
+    background-color: @nord11;
+    color: @nord0; 
+}
+
+#tray menu {
+    /* background-color: @nord0; */
+    /* color: @nord6; */
+    /* padding: 10px 5px; */
+    /* border: 2px solid @nord1; */
+}
+
+#pulseaudio,
+#backlight {
+	/* background-color: @nord14; */
+	background-color: @nord0;
+}
+
+#network,
+#cpu,
+#memory,
+#battery {
+	/* background-color: @nord15; */
+	background-color: @nord0;
+}
+
+#clock {
+	/* background-color: @nord12; */
+	background-color: @nord0;
+}
+
+#tray,
+#idle_inhibitor,
+#custom-logout {
+	/* background-color: @nord10; */
+	background-color: @nord0;
+}

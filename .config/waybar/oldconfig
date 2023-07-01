@@ -1,8 +1,8 @@
 {
-    "height": 30, 
-    "modules-left": ["clock", "sway/workspaces", "sway/mode"],
-    "modules-center": ["pulseaudio", "battery", "network", "tray", "idle_inhibitor"],
-    "modules-right": ["sway/window"],
+    "height": 40, 
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "clock", "tray", "idle_inhibitor", "custom/logout"],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>",
 		"on-click": ""
@@ -15,10 +15,9 @@
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B %d [%Y-%m-%d]}</big>\n<tt><big>{calendar}</big></tt>",
-        "format": "{:%H:%M}",
-//        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
-//        "format": "  {:%Y-%m-%d   %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "  {:%Y-%m-%d   %H:%M}",
+		"on-click": "chromium time.ir"
     },
     "cpu": {
         "format": "  {usage}%",
@@ -51,12 +50,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": " {essid}",
-        //"format-wifi": "  ({essid} / {signalStrength}%)",
+        "format-wifi": "  ({essid} / {signalStrength}%)",
         // "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰊗",
         "format-ethernet": "󰊗  {ipaddr}",
         "format-linked": "󰊗  {ifname} (No IP)",
-        "format-disconnected": " ",
+        "format-disconnected": "⚠  Disconnected",
 		"on-click": "nm-connection-editor"
     },
     "pulseaudio": {
@@ -64,7 +62,7 @@
         "format": "{icon}  {volume}%      {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "󰆪  {icon}  {format_source}",
-        "format-muted": "   {format_source}",
+        "format-muted": "󰆪   {format_source}",
         "format-source": "  {volume}%",
         "format-source-muted": "",
         "format-icons": {
