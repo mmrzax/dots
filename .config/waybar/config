@@ -1,7 +1,7 @@
 {
     "height": 30, 
-    "modules-left": ["clock", "sway/workspaces", "sway/mode"],
-    "modules-center": ["pulseaudio", "battery", "network", "tray", "idle_inhibitor"],
+    "modules-left": ["clock", "sway/scratchpad", "sway/workspaces", "sway/mode"],
+    "modules-center": ["pulseaudio", "battery", "network", "idle_inhibitor", "tray"],
     "modules-right": ["sway/window"],
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>",
@@ -12,7 +12,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 20
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B %d [%Y-%m-%d]}</big>\n<tt><big>{calendar}</big></tt>",
@@ -91,5 +91,12 @@
 	  "format": "󰗽",
 	  "interval": "once",
 	  "on-click": "swaynag -t warning -f Ubutnu -m 'Do You Want to Exit Sway?' -B 'YES' 'swaymsg exit'",
-	}
+	},
+	"sway/scratchpad": {
+               "format": "{icon} {count}",
+               "show-empty": true,
+               "format-icons": [""],
+               "tooltip": true,
+               "tooltip-format": "{app}: {title}"
+           }
 }

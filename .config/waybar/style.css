@@ -8,16 +8,28 @@ window {
     /* font-family: Ubuntu Nerd Font; */
     font-size: 16px;
     font-weight: 900;
-	margin: 0px 10px;
 }
 
+#clock,
+#workspaces button,
+#scratchpad,
+#window,
+#mode {
+	margin: 0px 6px;
+}
+#pulseaudio,
+#network,
+#battery,
+#idle_inhibitor {
+	margin: 0px 16px;
+}
 
 #workspaces button.focused {
 	color: @nord11;
 }
 
 #window {
-	font-family: Ubuntu;
+	/* font-family: Ubuntu; */
     font-weight: 900;
 	font-size: 13px;
 }
