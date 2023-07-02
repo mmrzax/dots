@@ -43,7 +43,9 @@ window {
     color: @nord13;
 }
 
-#battery.charging {
+#battery.charging,
+#battery.charging.warning,
+#battery.charging.critical {
 	color: @nord14;
 }
 
