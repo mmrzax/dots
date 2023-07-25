@@ -1,0 +1,14 @@
+function sync_obsidian
+{
+cd $HOME/Files/obsidian-discipline/
+git add .
+git commit -m "MMRZAX FROM ARCHLINUX"
+git fetch
+git merge --no-edit
+git add .
+git commit -m "AUTOMERGE ARCHLINUX"
+git push
+echo "OBSIDIAN SYNC FINISHED"
+sleep 2
+}
+alias ob="sync_obsidian"
