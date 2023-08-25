@@ -13,28 +13,50 @@ require("neogit").setup({
     kind = "split",
   },
 
-  -- Setting any section to `false` will make the section not render at all
   sections = {
+    sequencer = {
+      folded = true,
+      hidden = false,
+    },
     untracked = {
       folded = true,
+      hidden = false,
     },
     unstaged = {
       folded = true,
+      hidden = false,
     },
     staged = {
       folded = true,
+      hidden = false,
     },
     stashes = {
       folded = true,
+      hidden = false,
     },
-    unpulled = {
+    unpulled_upstream = {
       folded = true,
+      hidden = false,
     },
-    unmerged = {
+    unmerged_upstream = {
       folded = true,
+      hidden = false,
+    },
+    unpulled_pushRemote = {
+      folded = true,
+      hidden = false,
+    },
+    unmerged_pushRemote = {
+      folded = true,
+      hidden = false,
     },
     recent = {
       folded = true,
+      hidden = false,
+    },
+    rebase = {
+      folded = true,
+      hidden = false,
     },
   },
 })
