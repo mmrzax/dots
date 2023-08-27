@@ -7,7 +7,7 @@
     "vim.vimrc.path": "$HOME/.ideavimrc",
     "editor.cursorStyle": "block",
     "editor.fontWeight": "normal",
-    "editor.fontFamily": "'FiraCode Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "'Courier Prime', 'FiraCode Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 22,
     "editor.fontLigatures": true
 }
