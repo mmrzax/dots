@@ -22,18 +22,18 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMonoNL Nerd Font
+    family: AnonymicePro Nerd Font
     style: Regular
   bold:
-    family: JetBrainsMonoNL Nerd Font
+    family: AnonymicePro Nerd Font
     style: Bold
   italic:
-    family: JetBrainsMonoNL Nerd Font
+    family: AnonymicePro Nerd Font
     style: Italic
   bold_italic:
-    family: JetBrainsMonoNL Nerd Font
+    family: AnonymicePro Nerd Font
     style: Bold Italic
-  size: 12
+  size: 14
   builtin_box_drawing: true
   offset:
     x: 0

@@ -1,12 +1,12 @@
 {
     "workbench.colorTheme": "Rosé Pine (no italics)",
     "workbench.iconTheme": "rose-pine-icons",
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
     "vim.smartRelativeLine": true,
     "vim.vimrc.enable": true,
     "vim.useSystemClipboard": true,
     "vim.vimrc.path": "$HOME/.ideavimrc",
-    "editor.fontSize": 22,
     "editor.cursorStyle": "block",
-    "editor.fontWeight": "normal"
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 22,
+    "editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace"
 }
