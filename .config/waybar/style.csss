@@ -1,0 +1,62 @@
+@import "nord.css";
+
+window {
+    background-color: transparent;
+}
+
+* {
+    /* font-family: Ubuntu Nerd Font; */
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#clock,
+#workspaces button,
+#scratchpad,
+#window,
+#mode {
+	margin: 0px 6px;
+}
+#pulseaudio,
+#network,
+#battery,
+#idle_inhibitor {
+	margin: 0px 16px;
+}
+
+#workspaces button.focused {
+	color: @nord11;
+}
+
+#window {
+	/* font-family: Ubuntu; */
+    font-weight: 900;
+	font-size: 13px;
+}
+
+#pulseaudio.muted {
+    color: @nord13;
+}
+
+#network.disabled,
+#network.disconnected {
+    color: @nord13;
+}
+
+#battery.charging,
+#battery.charging.warning,
+#battery.charging.critical {
+	color: @nord14;
+}
+
+#battery.warning {
+    color: @nord13;
+    }
+
+#battery.critical {
+    color: @nord11;
+}
+
+#idle_inhibitor.deactivated {
+	color: @nord13;
+}
