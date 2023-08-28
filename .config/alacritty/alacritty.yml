@@ -33,7 +33,7 @@ font:
   bold_italic:
     family: JetBrainsMonoNL Nerd Font
     style: Bold Italic
-  size: 12
+  size: 14
   builtin_box_drawing: true
   offset:
     x: 0
