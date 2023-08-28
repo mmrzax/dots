@@ -207,6 +207,7 @@ bar {
 	# exec lxsession &
 	exec nm-applet --indicator &
 	exec blueman-applet &
+	exec dunst &
 
 # Gaps
 

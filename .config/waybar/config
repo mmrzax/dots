@@ -1,11 +1,55 @@
 {
-    "height": 30, 
-    "modules-left": ["clock", "sway/scratchpad", "sway/workspaces", "sway/mode"],
-    "modules-center": ["pulseaudio", "battery", "network", "idle_inhibitor", "tray"],
-    "modules-right": ["sway/window"],
+    "height": 35,
+    "modules-left": [
+        "clock",
+        "sway/scratchpad",
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "network",
+        "idle_inhibitor",
+        "tray"
+    ],
+    // "modules-center": [
+    //     "sway/window"
+    // ],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>",
-		"on-click": ""
+        "on-click": ""
     },
     "sway/window": {
         "max-length": 50
@@ -17,23 +61,29 @@
     "clock": {
         "tooltip-format": "<big>{:%Y %B %d [%Y-%m-%d]}</big>\n<tt><big>{calendar}</big></tt>",
         "format": "{:%H:%M}",
-//        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
-//        "format": "  {:%Y-%m-%d   %H:%M}",
+        "format-alt": "{:%Y-%m-%d}"
+        //        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
+        //        "format": "  {:%Y-%m-%d   %H:%M}",
     },
     "cpu": {
         "format": "  {usage}%",
         "tooltip": false,
-		"on-click": ""
+        "on-click": ""
     },
     "memory": {
         "format": "  {}%",
-		"on-click": ""
+        "on-click": ""
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{icon}  {percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"],
-		"on-click": "brightnessctl s 50%"
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰃞",
+            "󰃟",
+            "󰃠"
+        ],
+        "on-click": "brightnessctl s 50%"
     },
     "battery": {
         "states": {
@@ -41,32 +91,38 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon}  {capacity}%",
-        "format-charging": "󰂄  {capacity}%",
-        "format-plugged": "  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-		"full-at": 90,
+        "full-at": 90,
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": " {essid}",
         //"format-wifi": "  ({essid} / {signalStrength}%)",
         // "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰊗",
-        "format-ethernet": "󰊗  {ipaddr}",
-        "format-linked": "󰊗  {ifname} (No IP)",
-        "format-disconnected": " ",
-		"on-click": "nm-connection-editor"
+        "format-ethernet": "󰊗 {ipaddr}",
+        "format-linked": "󰊗 {ifname} (No IP)",
+        "format-disconnected": "",
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{icon}  {volume}%      {format_source}",
-        "format-bluetooth": "{volume}% {icon}  {format_source}",
-        "format-bluetooth-muted": "{icon}   {format_source}",
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}%   {format_source}",
+        "format-bluetooth": " {icon} {volume}%   {format_source}",
+        "format-bluetooth-muted": " {icon}   {format_source}",
         "format-muted": "   {format_source}",
-        "format-source": "  {volume}%",
+        "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "󰋋",
@@ -75,29 +131,35 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
-	"idle_inhibitor": {
-		"tooltip": false,
-		"format": "{icon}",
-		"format-icons": {
-			"activated": "",
-			"deactivated": "",
-		},
-},
-	"custom/logout": {
-	  "tooltip": false,
-	  "format": "󰗽",
-	  "interval": "once",
-	  "on-click": "swaynag -t warning -f Ubutnu -m 'Do You Want to Exit Sway?' -B 'YES' 'swaymsg exit'",
-	},
-	"sway/scratchpad": {
-               "format": "{icon} {count}",
-               "show-empty": true,
-               "format-icons": [""],
-               "tooltip": true,
-               "tooltip-format": "{app}: {title}"
-           }
+    "idle_inhibitor": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/logout": {
+        "tooltip": false,
+        "format": "󰗽",
+        "interval": "once",
+        "on-click": "swaynag -t warning -f Ubutnu -m 'Do You Want to Exit Sway?' -B 'YES' 'swaymsg exit'"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": true,
+        "format-icons": [
+            ""
+        ],
+        "tooltip": true,
+        "tooltip-format": "{app}"
+    }
 }

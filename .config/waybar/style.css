@@ -1,62 +1,115 @@
-@import "nord.css";
+@import "rose-pine.css";
 
-window {
-    background-color: transparent;
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+  color: @text;
 }
 
 * {
-    /* font-family: Ubuntu Nerd Font; */
+    font-family: JetBrainsMonoNL Nerd Font Propo;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: bold;
+	border: none;
+	min-height: 0;
 }
 
-#clock,
-#workspaces button,
-#scratchpad,
-#window,
-#mode {
-	margin: 0px 6px;
-}
-#pulseaudio,
-#network,
-#battery,
-#idle_inhibitor {
-	margin: 0px 16px;
-}
-
-#workspaces button.focused {
-	color: @nord11;
-}
-
-#window {
-	/* font-family: Ubuntu; */
-    font-weight: 900;
-	font-size: 13px;
+tooltip {
+  background: @base;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @overlay;
 }
 
 #pulseaudio.muted {
-    color: @nord13;
+    color: @muted;
 }
 
 #network.disabled,
 #network.disconnected {
-    color: @nord13;
+    color: @muted;
 }
 
 #battery.charging,
 #battery.charging.warning,
 #battery.charging.critical {
-	color: @nord14;
+	color: @pine;
 }
 
 #battery.warning {
-    color: @nord13;
+    background-color: @gold;
     }
 
 #battery.critical {
-    color: @nord11;
+    background-color: @love;
 }
 
-#idle_inhibitor.deactivated {
-	color: @nord13;
+/* LEFT SECTION */
+#clock,
+#workspaces,
+#scratchpad {
+	margin: 3px 0px;
+	padding: 3px 16px;
+	background-color: @base;
+	border: 1px @overlay solid;
 }
+
+/* RIGHT SECTION */
+#pulseaudio,
+#backlight,
+#network,
+#battery,
+#tray,
+#idle_inhibitor {
+	margin: 3px 0px;
+	padding: 3px 16px;
+	background-color: @base;
+	border: 1px @overlay solid;
+}
+
+/* MODE AND WINDOW */
+#window,
+#mode {
+	margin: 3px 10px;
+	padding: 3px 16px;
+	background-color: @pine;
+	border-radius: 14px;
+	border: 1px @overlay solid;
+}
+
+#mode {
+	background-color: @love;
+}
+
+#workspaces button {
+  color: @highlightMed;
+}
+#workspaces button.active {
+  color: @text;
+}
+#workspaces button.focused {
+  color: @text;
+}
+#workspaces button.urgent {
+  color: @base;
+  background: @pine;
+}
+#workspaces button:hover {
+  background: @highlightLow;
+  color: @text;
+}
+
+/* LEFT ROUNDED */
+#clock,
+#pulseaudio {
+	margin-left: 10px;
+	border-radius: 14px 0px 0px 14px;
+}
+
+/* RIGHT ROUNDED */
+#workspaces,
+#tray {
+	margin-right: 10px;
+	border-radius: 0px 14px 14px 0px;
+}
+

@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Rosé Pine (no italics)",
     "workbench.iconTheme": "rose-pine-icons",
     "vim.smartRelativeLine": true,
     "vim.vimrc.enable": true,
@@ -7,7 +7,7 @@
     "vim.vimrc.path": "$HOME/.ideavimrc",
     "editor.cursorStyle": "block",
     "window.zoomLevel": 1,
-    "editor.fontSize": 13,
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace"
 }
