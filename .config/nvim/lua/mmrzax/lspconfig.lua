@@ -123,3 +123,46 @@ require("lspconfig").pyright.setup({
   on_attach = on_attach,
   flags = lsp_flags,
 })
+
+-- ruff-lsp
+local on_attach_ruff_lsp = function(client, bufnr)
+  client.server_capabilities.hoverProvider = false
+end
+require("lspconfig").ruff_lsp.setup {
+  capabilities = capabilities,
+  on_attach = on_attach_ruff_lsp,
+  flags = lsp_flags,
+  init_options = {
+    settings = {
+      -- Any extra CLI arguments for `ruff` go here.
+      args = {},
+    }
+  }
+}
+
+-- pylsp
+--[[ require("lspconfig").pylsp.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  flags = lsp_flags,
+  settings = {
+    pylsp = {
+      plugins = {
+
+        ruff = {
+          enabled = true,
+          extendSelect = { "I" },
+        },
+
+        black = {
+          enabled = true,
+        },
+
+        mypy = {
+          enabled = true,
+        },
+
+      },
+    },
+  },
+} ]]
