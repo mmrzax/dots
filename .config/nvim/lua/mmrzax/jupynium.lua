@@ -107,13 +107,12 @@ require("jupynium").setup({
 -- You can link highlighting groups.
 -- This is the default (when colour scheme is unknown)
 -- Try with CursorColumn, Pmenu, Folded etc.
-vim.cmd [[
+vim.cmd([[
 hi! link JupyniumCodeCellSeparator CursorLine
 hi! link JupyniumMarkdownCellSeparator CursorLine
 hi! link JupyniumMarkdownCellContent CursorLine
 hi! link JupyniumMagicCommand Keyword
-]]
+]])
 
 -- Please share your favourite settings on other colour schemes, so I can add defaults.
 -- Currently, tokyonight is supported.
-

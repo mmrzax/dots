@@ -46,7 +46,6 @@ function M.setup()
     },
 
     t = ts_keys,
-
   }
 
   whichkey.setup(conf)

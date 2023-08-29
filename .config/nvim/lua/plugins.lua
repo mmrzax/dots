@@ -205,11 +205,11 @@ function M.setup()
       as = "rose-pine",
     })
 
-    use ({
+    use({
       "rcarriga/nvim-notify",
     })
 
-    use ({
+    use({
       "stevearc/dressing.nvim",
     })
 
