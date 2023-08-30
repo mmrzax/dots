@@ -34,13 +34,16 @@ tooltip {
 #battery.charging.warning,
 #battery.charging.critical {
 	color: @pine;
+	background-color: @base;
 }
 
 #battery.warning {
+    color: @base;
     background-color: @gold;
     }
 
 #battery.critical {
+    color: @base;
     background-color: @love;
 }
 
