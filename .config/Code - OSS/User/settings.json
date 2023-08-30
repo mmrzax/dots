@@ -1,13 +1,15 @@
 {
-    "workbench.colorTheme": "Rosé Pine (no italics)",
+    "workbench.colorTheme": "Everforest Dark",
     "workbench.iconTheme": "rose-pine-icons",
     "vim.smartRelativeLine": true,
     "vim.vimrc.enable": true,
     "vim.useSystemClipboard": true,
     "vim.vimrc.path": "$HOME/.ideavimrc",
     "editor.cursorStyle": "block",
-    "window.zoomLevel": 1,
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace"
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
+    "git.openRepositoryInParentFolders": "never",
+    "everforest.darkContrast": "hard",
+    "window.zoomLevel": 2
 }
