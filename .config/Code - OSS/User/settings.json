@@ -1,15 +1,19 @@
 {
-    "workbench.colorTheme": "Everforest Dark",
     "workbench.iconTheme": "rose-pine-icons",
     "vim.smartRelativeLine": true,
     "vim.vimrc.enable": true,
     "vim.useSystemClipboard": true,
     "vim.vimrc.path": "$HOME/.ideavimrc",
     "editor.cursorStyle": "block",
-    "editor.fontSize": 16,
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
     "git.openRepositoryInParentFolders": "never",
     "everforest.darkContrast": "hard",
-    "window.zoomLevel": 2
+    "workbench.colorTheme": "Black",
+    "window.zoomLevel": 2,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle"
 }
