@@ -35,7 +35,7 @@ return {
       vim.o.background = "dark"
     end,
     config = function()
-      local colors_name = "zenbones"
+      local colors_name = "zenwritten"
       -- vim.g[colors_name .. "_compat"] = 1
       vim.g[colors_name] = {
         darkness = "stark",
@@ -57,7 +57,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "zenbones",
+      colorscheme = "zenwritten",
     },
   },
 }
