@@ -45,5 +45,6 @@ export PATH="$HOME/bin:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin:$PATH"
 export MOZ_ENABLE_WAYLAND=1
 export GRIM_DEFAULT_DIR=$HOME/Pictures/shot
 # export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
+export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 
 source $HOME/.obsidian
