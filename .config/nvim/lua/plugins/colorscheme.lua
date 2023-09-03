@@ -1,5 +1,8 @@
 return {
   {
+    "andreasvc/vim-256noir",
+  },
+  {
     "rose-pine/neovim",
     name = "rose-pine",
   },
