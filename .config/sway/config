@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term alacritty
+set $term kitty
 
 # File Manager
 set $files ranger
@@ -53,8 +53,10 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
     bindsym $mod+grave exec $term
 
 	# Start a file manager
-	# bindsym $mod+u exec $term $files
-	bindsym $mod+u exec $term --command $files
+	# kitty
+	bindsym $mod+u exec $term $files
+	# alacritty
+	# bindsym $mod+u exec $term --command $files
 
 	# Take Screenshot
 	bindsym Print exec grim
