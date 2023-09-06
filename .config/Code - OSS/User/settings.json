@@ -10,11 +10,11 @@
     "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', 'monospace', monospace",
     "git.openRepositoryInParentFolders": "never",
     "everforest.darkContrast": "hard",
-    "workbench.colorTheme": "GitHub Dark Default",
-    "window.zoomLevel": 2,
+    "workbench.colorTheme": "Black",
     "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 2
 }
