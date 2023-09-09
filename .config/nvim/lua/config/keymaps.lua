@@ -9,7 +9,7 @@ map("n", "n", "nzzzv", { remap = true, silent = true })
 map("n", "N", "Nzzzv", { remap = true, silent = true })
 
 -- Dont move cursor when typing "J"
-map("n", "J", "mzJ`z", { remap = true, silent = true })
+-- map("n", "J", "mzJ`z", { remap = true, silent = true })
 
 -- better up/down
 map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })

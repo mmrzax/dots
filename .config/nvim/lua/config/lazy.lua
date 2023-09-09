@@ -24,8 +24,9 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "gruvbox", "habamax" } },
-  checker = { enabled = false }, -- automatically check for plugin updates
+  install = { colorscheme = { "habamax" } },
+  checker = { enabled = true, notify = false }, -- automatically check for plugin updates
+  change_detection = { enabled = true, notify = false },
   performance = {
     rtp = {
       -- disable some rtp plugins

@@ -1,13 +1,12 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "gruvbox" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
 
+  { "nyoom-engineering/oxocarbon.nvim" },
   { "andreasvc/vim-256noir" },
   { "rose-pine/neovim", name = "rose-pine" },
   { "sainnhe/everforest" },
   {
     "ellisonleao/gruvbox.nvim",
-    lazy = false,
-    priority = 2982,
     opts = {
       undercurl = true,
       underline = true,
