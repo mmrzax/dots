@@ -3,14 +3,22 @@ return {
 
   { "nyoom-engineering/oxocarbon.nvim" },
   { "andreasvc/vim-256noir" },
-  { "rose-pine/neovim", name = "rose-pine" },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "main",
+      dark_variant = "main",
+      disable_italics = true,
+    },
+  },
   { "sainnhe/everforest" },
   {
     "ellisonleao/gruvbox.nvim",
     opts = {
       undercurl = true,
       underline = true,
-      bold = true,
+      bold = false,
       italic = {
         strings = false,
         comments = false,
