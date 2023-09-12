@@ -1,5 +1,5 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "rosebones" } },
 
   {
     "rose-pine/neovim",
@@ -40,7 +40,7 @@ return {
     "mcchrish/zenbones.nvim",
     dependencies = "rktjmp/lush.nvim",
     config = function()
-      local variant = "zenwritten"
+      local variant = "rosebones"
       vim.g[variant] = {
         italic_comments = false,
         darkness = "stark",
