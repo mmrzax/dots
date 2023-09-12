@@ -1,8 +1,6 @@
 return {
   { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
 
-  { "nyoom-engineering/oxocarbon.nvim" },
-  { "andreasvc/vim-256noir" },
   {
     "rose-pine/neovim",
     name = "rose-pine",
