@@ -1,7 +1,8 @@
 return {
   { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
 
-  {
+  -- Rose-Pine
+  { -- {{{
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
@@ -9,9 +10,15 @@ return {
       dark_variant = "main",
       disable_italics = true,
     },
-  },
-  { "sainnhe/everforest" },
-  {
+  }, -- }}}
+
+  -- Everforest
+  { -- {{{
+    "sainnhe/everforest",
+  }, -- }}}
+
+  -- Gruvbox
+  { -- {{{
     "ellisonleao/gruvbox.nvim",
     opts = {
       undercurl = true,
@@ -35,8 +42,10 @@ return {
       dim_inactive = false,
       transparent_mode = false,
     },
-  },
-  {
+  }, -- }}}
+
+  -- Zenbones
+  { -- {{{
     "mcchrish/zenbones.nvim",
     dependencies = "rktjmp/lush.nvim",
     config = function()
@@ -48,8 +57,10 @@ return {
       }
       -- vim.cmd.colorscheme(variant)
     end,
-  },
-  {
+  }, -- }}}
+
+  -- No-Clown-Fiesta
+  { -- {{{
     "aktersnurra/no-clown-fiesta.nvim",
     opts = {
       transparent = false,
@@ -62,5 +73,5 @@ return {
         lsp = { underline = true },
       },
     },
-  },
+  }, -- }}}
 }
