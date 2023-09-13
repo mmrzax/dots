@@ -1,5 +1,5 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "rosebones" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
 
   {
     "rose-pine/neovim",
@@ -40,7 +40,7 @@ return {
     "mcchrish/zenbones.nvim",
     dependencies = "rktjmp/lush.nvim",
     config = function()
-      local variant = "rosebones"
+      local variant = "zenwritten"
       vim.g[variant] = {
         italic_comments = false,
         darkness = "stark",
@@ -48,5 +48,19 @@ return {
       }
       -- vim.cmd.colorscheme(variant)
     end,
+  },
+  {
+    "aktersnurra/no-clown-fiesta.nvim",
+    opts = {
+      transparent = false,
+      styles = {
+        comments = { italic = true, bold = false },
+        keywords = { italic = false, bold = true },
+        functions = { italic = false, bold = false },
+        variables = { italic = false, bold = false },
+        type = { bold = true },
+        lsp = { underline = true },
+      },
+    },
   },
 }
