@@ -9,7 +9,11 @@ return {
       "ibhagwan/fzf-lua", -- optional
     },
     config = true,
-    cmd = { "Neogit", "NeogitMessages", "NeogitResetState" },
+    cmd = { "Neogit" },
+    keys = {
+      { "<leader>gn", "<cmd>Neogit<cr>", desc = "NeoGit (Root)" },
+      { "<leader>gN", "<cmd>Neogit cwd=%:p:h<cr>", desc = "NeoGit (CWD)" },
+    },
     opts = {
       -- Change the default way of opening neogit
       kind = "vsplit",
