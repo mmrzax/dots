@@ -87,11 +87,11 @@ tooltip {
 #workspaces button {
   color: @highlightMed;
 }
-#workspaces button.active {
+#workspaces button.current_output {
   color: @text;
 }
 #workspaces button.focused {
-  color: @text;
+  color: @love;
 }
 #workspaces button.urgent {
   color: @base;
@@ -99,7 +99,7 @@ tooltip {
 }
 #workspaces button:hover {
   background: @highlightLow;
-  color: @text;
+  color: @love;
 }
 
 /* LEFT ROUNDED */
