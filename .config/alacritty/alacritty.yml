@@ -33,7 +33,7 @@ font:
   bold_italic:
     family: Hack Nerd Font
     style: Bold Italic
-  size: 16
+  size: 18
   builtin_box_drawing: true
   offset:
     x: 0
@@ -55,9 +55,13 @@ bell:
 windows_opacity: 1.0
 
 cursor:
-  style: Block
-  vi_mode_style: Block
+  style:
+    shape: Underline
+    blinking: Always
   unfocused_hollow: true
+  vi_mode_style: Underline
+  blink_interval: 400
+  blink_timeout: 0
 
 live_config_reload: true
 
