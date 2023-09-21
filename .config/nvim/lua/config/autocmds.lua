@@ -3,12 +3,12 @@ local function augroup(name)
 end
 
 -- Restore cursor shape after leaving nvim
-vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
-  group = augroup("restore_cursor"),
-  callback = function()
-    vim.opt.guicursor = "a:hor20"
-  end,
-})
+-- vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
+--   group = augroup("restore_cursor"),
+--   callback = function()
+--     vim.opt.guicursor = "a:hor20"
+--   end,
+-- })
 
 -- Check if we need to reload the file when it changed
 vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
