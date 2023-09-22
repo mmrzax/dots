@@ -13,7 +13,7 @@ end
 
 -- Main Options
 -- config.color_scheme = "rose-pine-moon"
-config.font = wezterm.font("Hack")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 14
 
 -- UI and Colors
