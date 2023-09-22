@@ -2,6 +2,9 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local config = {}
 
+local colors = require("rose-pine").colors()
+local window_frame = require("rose-pine").window_frame()
+
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
@@ -9,36 +12,15 @@ if wezterm.config_builder then
 end
 
 -- Main Options
-config.color_scheme = "rose-pine"
+-- config.color_scheme = "rose-pine-moon"
 config.font = wezterm.font("CommitMono-MMRZAX")
 config.font_size = 16
 
 -- UI and Colors
 config.tab_bar_at_bottom = true
-local rosepine_base = "#191724"
-local rosepine_active_tab = {
-	bg_color = "#26233a",
-	fg_color = "#e0def4",
-}
-local rosepine_inactive_tab = {
-	bg_color = rosepine_base,
-	fg_color = "#6e6a86",
-}
-config.colors = {
-	tab_bar = {
-		background = rosepine_base,
-		active_tab = rosepine_active_tab,
-		inactive_tab = rosepine_inactive_tab,
-		inactive_tab_hover = rosepine_active_tab,
-		new_tab = rosepine_inactive_tab,
-		new_tab_hover = rosepine_active_tab,
-		inactive_tab_edge = "#6e6a86", -- (Fancy tab bar only)
-	},
-}
-config.window_frame = {
-	active_titlebar_bg = rosepine_base,
-	inactive_titlebar_bg = rosepine_base,
-}
+config.use_fancy_tab_bar = false
+config.colors = colors
+-- config.window_frame = window_frame
 
 -- Key Binding and Key Tables
 wezterm.on("update-right-status", function(window, pane)
@@ -62,6 +44,17 @@ config.keys = {
 	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
 	{ key = "P", mods = "LEADER|SHIFT", action = act.ActivateCommandPalette },
 	{ key = "f", mods = "LEADER", action = act.Search({ CaseInSensitiveString = "" }) },
+	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
+	{ key = "[", mods = "LEADER", action = act.ActivateCopyMode },
+	{ key = "1", mods = "LEADER", action = act.ActivateTab(0) },
+	{ key = "2", mods = "LEADER", action = act.ActivateTab(1) },
+	{ key = "3", mods = "LEADER", action = act.ActivateTab(2) },
+	{ key = "4", mods = "LEADER", action = act.ActivateTab(3) },
+	{ key = "5", mods = "LEADER", action = act.ActivateTab(4) },
+	{ key = "5", mods = "LEADER", action = act.ActivateTab(4) },
+	{ key = "6", mods = "LEADER", action = act.ActivateTab(5) },
+	{ key = "7", mods = "LEADER", action = act.ActivateTab(6) },
+	{ key = "8", mods = "LEADER", action = act.ActivateTab(7) },
 	{
 		key = ",",
 		mods = "LEADER",
