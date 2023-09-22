@@ -60,7 +60,7 @@ config.keys = {
 	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
-	{ key = "p", mods = "LEADER", action = act.ActivateCommandPalette },
+	{ key = "P", mods = "LEADER|SHIFT", action = act.ActivateCommandPalette },
 	{ key = "f", mods = "LEADER", action = act.Search({ CaseInSensitiveString = "" }) },
 	{
 		key = ",",
