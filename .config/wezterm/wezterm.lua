@@ -55,6 +55,11 @@ config.keys = {
 	{ key = "6", mods = "LEADER", action = act.ActivateTab(5) },
 	{ key = "7", mods = "LEADER", action = act.ActivateTab(6) },
 	{ key = "8", mods = "LEADER", action = act.ActivateTab(7) },
+	-- { key = "LeftArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Left", 1 }) },
+	-- { key = "RightArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Right", 1 }) },
+	-- { key = "UpArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Up", 1 }) },
+	-- { key = "DownArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Down", 1 }) },
+
 	{
 		key = ",",
 		mods = "LEADER",
@@ -72,20 +77,11 @@ config.keys = {
 	},
 
 	{
-		key = "r",
+		key = "`",
 		mods = "LEADER",
 		action = act.ActivateKeyTable({
 			name = "resize_pane",
 			one_shot = false,
-		}),
-	},
-
-	{
-		key = "a",
-		mods = "LEADER",
-		action = act.ActivateKeyTable({
-			name = "activate_pane",
-			timeout_milliseconds = 1000,
 		}),
 	},
 }
@@ -105,20 +101,6 @@ config.key_tables = {
 		{ key = "j", action = act.AdjustPaneSize({ "Down", 1 }) },
 
 		{ key = "Escape", action = "PopKeyTable" },
-	},
-
-	activate_pane = {
-		{ key = "LeftArrow", action = act.ActivatePaneDirection("Left") },
-		{ key = "h", action = act.ActivatePaneDirection("Left") },
-
-		{ key = "RightArrow", action = act.ActivatePaneDirection("Right") },
-		{ key = "l", action = act.ActivatePaneDirection("Right") },
-
-		{ key = "UpArrow", action = act.ActivatePaneDirection("Up") },
-		{ key = "k", action = act.ActivatePaneDirection("Up") },
-
-		{ key = "DownArrow", action = act.ActivatePaneDirection("Down") },
-		{ key = "j", action = act.ActivatePaneDirection("Down") },
 	},
 }
 
