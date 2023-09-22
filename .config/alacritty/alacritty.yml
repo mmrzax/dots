@@ -22,16 +22,16 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMonoNL Nerd Font
+    family: CommitMono-MMRZAX
     style: Regular
   bold:
-    family: JetBrainsMonoNL Nerd Font
+    family: CommitMono-MMRZAX
     style: Bold
   italic:
-    family: JetBrainsMonoNL Nerd Font
+    family: CommitMono-MMRZAX
     style: Italic
   bold_italic:
-    family: JetBrainsMonoNL Nerd Font
+    family: CommitMono-MMRZAX
     style: Bold Italic
   size: 14
   builtin_box_drawing: true
