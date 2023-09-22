@@ -49,7 +49,7 @@ wezterm.on("update-right-status", function(window, pane)
 	window:set_right_status(name or "")
 end)
 
-config.leader = { key = "`", mods = "ALT" }
+config.leader = { key = "`", mods = "CTRL" }
 config.keys = {
 	{ key = '"', mods = "LEADER|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	{ key = "%", mods = "LEADER|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
@@ -60,6 +60,8 @@ config.keys = {
 	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+	{ key = "p", mods = "LEADER", action = act.ActivateCommandPalette },
+	{ key = "f", mods = "LEADER", action = act.Search({ CaseInSensitiveString = "" }) },
 
 	{
 		key = "r",

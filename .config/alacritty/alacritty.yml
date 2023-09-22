@@ -57,7 +57,7 @@ windows_opacity: 1.0
 cursor:
   style:
     shape: Underline
-    blinking: Always
+    blinking: Never
   unfocused_hollow: true
   vi_mode_style: Underline
   blink_interval: 400
