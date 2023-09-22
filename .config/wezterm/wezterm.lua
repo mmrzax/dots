@@ -55,10 +55,6 @@ config.keys = {
 	{ key = "6", mods = "LEADER", action = act.ActivateTab(5) },
 	{ key = "7", mods = "LEADER", action = act.ActivateTab(6) },
 	{ key = "8", mods = "LEADER", action = act.ActivateTab(7) },
-	-- { key = "LeftArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Left", 1 }) },
-	-- { key = "RightArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Right", 1 }) },
-	-- { key = "UpArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Up", 1 }) },
-	-- { key = "DownArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Down", 1 }) },
 
 	{
 		key = ",",
@@ -101,6 +97,7 @@ config.key_tables = {
 		{ key = "j", action = act.AdjustPaneSize({ "Down", 1 }) },
 
 		{ key = "Escape", action = "PopKeyTable" },
+		{ key = "Enter", action = "PopKeyTable" },
 	},
 }
 
