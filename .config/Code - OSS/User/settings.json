@@ -14,7 +14,6 @@
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
-    "window.zoomLevel": 4,
     "redhat.telemetry.enabled": false,
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
