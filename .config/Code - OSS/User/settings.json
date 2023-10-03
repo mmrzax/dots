@@ -8,14 +8,14 @@
     "editor.fontLigatures": true,
     "git.openRepositoryInParentFolders": "never",
     "everforest.darkContrast": "hard",
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Rosé Pine (no italics)",
     "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     "redhat.telemetry.enabled": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "editor.formatOnSave": true,
-    "editor.fontFamily": "'CommitMono-MMRZAX', 'Droid Sans Mono', 'monospace', monospace"
+    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace"
 }
