@@ -53,10 +53,14 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
     bindsym $mod+grave exec $term
 
 	# Start a file manager
-	# kitty
-	bindsym $mod+u exec $term $files
-	# alacritty
-	# bindsym $mod+u exec $term --command $files
+    # using kitty
+    # bindsym $mod+u exec kitty $files
+#
+    # using wezterm
+    bindsym $mod+u exec wezterm start $files
+
+    # using alacritty
+    # bindsym $mod+u exec alacritty --command $files
 
 	# Take Screenshot
 	bindsym Print exec grim
