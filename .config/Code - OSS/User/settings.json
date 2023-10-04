@@ -15,7 +15,7 @@
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     "redhat.telemetry.enabled": false,
-    "editor.fontSize": 18,
+    "editor.fontSize": 20,
     "editor.formatOnSave": true,
     "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace"
 }
