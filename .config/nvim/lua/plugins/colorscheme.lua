@@ -1,5 +1,5 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
 
   -- Rose-Pine
   { -- {{{
