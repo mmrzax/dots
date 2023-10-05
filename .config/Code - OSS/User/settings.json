@@ -1,22 +1,24 @@
 {
-    "workbench.iconTheme": "rose-pine-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "vim.smartRelativeLine": true,
     "vim.vimrc.enable": true,
     "vim.useSystemClipboard": true,
     "vim.vimrc.path": "$HOME/.ideavimrc",
-    "editor.cursorStyle": "block",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
     "git.openRepositoryInParentFolders": "never",
     "everforest.darkContrast": "hard",
-    "workbench.colorTheme": "Rosé Pine (no italics)",
+    "workbench.colorTheme": "Nord",
     "workbench.statusBar.visible": false,
     "editor.minimap.enabled": false,
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.visible": false,
     "workbench.startupEditor": "none",
     "redhat.telemetry.enabled": false,
-    "editor.fontSize": 20,
     "editor.formatOnSave": true,
-    "editor.fontFamily": "'Hack', 'Droid Sans Mono', 'monospace', monospace",
-    "window.zoomLevel": 1
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+    "window.zoomLevel": 1,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "editor.fontSize": 16
 }
