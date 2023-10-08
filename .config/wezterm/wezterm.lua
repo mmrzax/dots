@@ -14,7 +14,7 @@ end
 -- Main Options
 -- config.color_scheme = "rose-pine-moon"
 config.font = wezterm.font("JetBrains MonoNL")
-config.font_size = 14
+config.font_size = 16
 
 -- UI and Colors
 config.tab_bar_at_bottom = true
