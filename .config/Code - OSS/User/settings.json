@@ -1,24 +1,11 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "vim.smartRelativeLine": true,
-    "vim.vimrc.enable": true,
-    "vim.useSystemClipboard": true,
-    "vim.vimrc.path": "$HOME/.ideavimrc",
-    "editor.fontLigatures": false,
-    "git.openRepositoryInParentFolders": "never",
-    "everforest.darkContrast": "hard",
-    "workbench.colorTheme": "Nord",
-    "workbench.statusBar.visible": false,
-    "editor.minimap.enabled": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.visible": false,
-    "workbench.startupEditor": "none",
-    "redhat.telemetry.enabled": false,
-    "editor.formatOnSave": true,
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
     "window.zoomLevel": 1,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "editor.fontSize": 16
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.cursorStyle": "block",
+    "editor.fontLigatures": false,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "python.analysis.autoImportCompletions": true
 }
