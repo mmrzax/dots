@@ -1,6 +1,5 @@
 {
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.colorTheme": "Rosé Pine",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
     "editor.cursorStyle": "block",
@@ -8,5 +7,6 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "python.analysis.autoImportCompletions": true,
-    "editor.fontSize": 18
+    "editor.fontSize": 10,
+    "window.zoomLevel": 1
 }
