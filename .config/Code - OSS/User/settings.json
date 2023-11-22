@@ -7,6 +7,5 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "python.analysis.autoImportCompletions": true,
-    "editor.fontSize": 10,
-    "window.zoomLevel": 4
+    "window.zoomLevel": 1
 }
