@@ -15,6 +15,10 @@ return {
   -- Nord.nvim
   {
     "shaunsingh/nord.nvim",
+    init = function()
+      vim.g.nord_italic = false
+      vim.g.nord_bold = true
+    end,
   },
 
   -- Everforest
