@@ -1,5 +1,5 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "nord" } },
 
   -- Rose-Pine
   { -- {{{
@@ -11,6 +11,11 @@ return {
       disable_italics = true,
     },
   }, -- }}}
+
+  -- Nord.nvim
+  {
+    "shaunsingh/nord.nvim",
+  },
 
   -- Everforest
   { -- {{{
