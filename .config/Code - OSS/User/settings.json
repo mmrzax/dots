@@ -49,6 +49,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": 2
+  "window.zoomLevel": 2,
+  "liveServer.settings.host": "0.0.0.0",
+  "liveServer.settings.donotVerifyTags": true
   // End
 }

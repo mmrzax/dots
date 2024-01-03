@@ -48,3 +48,5 @@ export GRIM_DEFAULT_DIR=$HOME/Pictures/shot
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 
 source $HOME/.obsidian
+
+export BAT_THEME=gruvbox-dark
