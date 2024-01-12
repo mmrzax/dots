@@ -1,5 +1,5 @@
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
+  -- { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
 
   -- Rose-Pine
   { -- {{{
@@ -68,19 +68,13 @@ return {
     end,
   }, -- }}}
 
-  -- No-Clown-Fiesta
+  -- Nordic
   { -- {{{
-    "aktersnurra/no-clown-fiesta.nvim",
-    opts = {
-      transparent = false,
-      styles = {
-        comments = { italic = true, bold = false },
-        keywords = { italic = false, bold = true },
-        functions = { italic = false, bold = false },
-        variables = { italic = false, bold = false },
-        type = { bold = true },
-        lsp = { underline = true },
-      },
-    },
+    "AlexvZyl/nordic.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("nordic").load()
+    end,
   }, -- }}}
 }
