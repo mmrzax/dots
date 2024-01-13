@@ -2,9 +2,8 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local config = {}
 
-local colors = require("nordic").colors()
--- local colors = require("rose-pine").colors()
--- local window_frame = require("rose-pine").window_frame()
+local colors = require("rose-pine").colors()
+local window_frame = require("rose-pine").window_frame()
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
@@ -21,7 +20,7 @@ config.font_size = 14
 config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false
 config.colors = colors
--- config.window_frame = window_frame
+config.window_frame = window_frame
 
 -- Key Binding and Key Tables
 wezterm.on("update-right-status", function(window, pane)
