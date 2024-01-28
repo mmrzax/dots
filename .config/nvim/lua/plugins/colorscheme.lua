@@ -1,14 +1,19 @@
 return {
-  -- { "LazyVim/LazyVim", opts = { colorscheme = "zenwritten" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
 
   -- Rose-Pine
   { -- {{{
     "rose-pine/neovim",
     name = "rose-pine",
+    lazy = false,
+    priority = 1000,
     opts = {
       variant = "main",
       dark_variant = "main",
-      disable_italics = true,
+      styles = {
+        bold = true,
+        italic = false,
+      },
     },
   }, -- }}}
 
@@ -71,10 +76,10 @@ return {
   -- Nordic
   { -- {{{
     "AlexvZyl/nordic.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("nordic").load()
-    end,
+    -- lazy = false,
+    -- priority = 1000,
+    -- config = function()
+    -- require("nordic").load()
+    -- end,
   }, -- }}}
 }
