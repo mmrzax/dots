@@ -1,5 +1,11 @@
 -- start screen
 return {
+  {
+    "nvim-lualine/lualine.nvim",
+    init = function()
+      require("config.evil_lualine")
+    end,
+  },
   -- disable alpha
   { "goolord/alpha-nvim", enabled = false },
 
@@ -76,7 +82,7 @@ return {
           local stats = require("lazy").stats()
           local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
           local pad_footer = string.rep(" ", 0) -- default = 8
-          starter.config.footer = pad_footer .. "⚡ Neovim loaded " .. stats.count .. " plugins in " .. ms .. "ms"
+          starter.config.footer = pad_footer .. "⚡ NEOVIM LOADED " .. stats.count .. " PLUGINS IN " .. ms .. "MS"
           pcall(starter.refresh)
         end,
       })
