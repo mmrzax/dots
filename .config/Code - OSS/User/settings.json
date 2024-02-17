@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
@@ -50,7 +50,6 @@
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 2,
   "editor.fontFamily": "'CommitMono', 'Droid Sans Mono', 'monospace', monospace",
-  "editor.fontSize": 12,
   "clangd.path": "/home/mmrza/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd"
   // End
 }
