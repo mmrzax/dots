@@ -23,6 +23,7 @@ alias mongo="mongod --dbpath=$HOME/Documents/apps/mongodb/mongodb-data"
 alias d="aria2c"
 alias myip="curl checkip.dyndns.org"
 alias vi="nvim"
+alias l="lsd -lahtr"
 
 # dotfiles
 alias dot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"

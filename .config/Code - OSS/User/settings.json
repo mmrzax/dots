@@ -50,6 +50,8 @@
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 2,
   "editor.fontFamily": "'CommitMono', 'Droid Sans Mono', 'monospace', monospace",
-  "clangd.path": "/home/mmrza/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd"
+  "clangd.path": "/home/mmrza/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
+  "cmake.configureOnOpen": true,
+  "cmake.options.statusBarVisibility": "visible"
   // End
 }
