@@ -1,5 +1,13 @@
+function SomethingBeautiful(color)
+  -- color = color or "rose-pine"
+  vim.cmd.colorscheme(color)
+
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
 return {
-  { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
+  -- { "LazyVim/LazyVim", opts = { colorscheme = "rose-pine" } },
 
   -- Rose-Pine
   { -- {{{
@@ -7,6 +15,10 @@ return {
     name = "rose-pine",
     lazy = false,
     priority = 1000,
+    config = function()
+      vim.cmd([[colorscheme rose-pine]])
+      SomethingBeautiful("rose-pine")
+    end,
     opts = {
       variant = "main",
       dark_variant = "main",
