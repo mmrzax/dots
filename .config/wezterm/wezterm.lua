@@ -22,6 +22,8 @@ config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false
 config.colors = colors
 config.window_frame = window_frame
+config.window_background_opacity = 0.8
+config.text_background_opacity = 0.8
 
 -- Key Binding and Key Tables
 wezterm.on("update-right-status", function(window, pane)
