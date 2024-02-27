@@ -20,6 +20,7 @@ config.font_size = 16
 -- UI and Colors
 config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false
+config.hide_tab_bar_if_only_one_tab = true
 config.colors = colors
 config.window_frame = window_frame
 -- config.window_background_opacity = 0.8
