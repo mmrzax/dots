@@ -51,3 +51,4 @@ export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 source $HOME/.obsidian
 
 export BAT_THEME=gruvbox-dark
+export PICO_SDK_PATH=/home/mmrza/Files/build/github/pico-sdk
