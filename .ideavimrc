@@ -1,5 +1,7 @@
 " set ideajoin
 
+set clipboard=unnamedplus
+
 inoremap jk <ESC>
 tnoremap jk <C-\><C-n> 
 nnoremap <Space>` :terminal<CR>
@@ -34,3 +36,4 @@ nmap <Space>Y "+Y
 nnoremap <Space>d "_d
 vnoremap <Space>d "_d
 nnoremap <Space>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
+set clipboard^=ideaput
