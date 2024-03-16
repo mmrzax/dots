@@ -49,14 +49,18 @@
   },
   "explorer.confirmDragAndDrop": false,
   "window.zoomLevel": 2,
-  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'CommitMono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
   "clangd.path": "/home/mmrza/.config/Code - OSS/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/17.0.3/clangd_17.0.3/bin/clangd",
   "cmake.configureOnOpen": true,
   "cmake.options.statusBarVisibility": "visible",
   "cmake.showOptionsMovedNotification": false,
-  "editor.fontSize": 13,
+  "editor.fontSize": 16,
   "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font', 'monospace', monospace",
   "terminal.integrated.fontSize": 13,
-  "notebook.lineNumbers": "on"
+  "notebook.lineNumbers": "on",
+  "vim.enableNeovim": true,
+  "vim.neovimUseConfigFile": true,
+  "vim.vimrc.path": "$HOME/.ideavimrc",
+  "vim.vimrc.enable": true
   // End
 }
