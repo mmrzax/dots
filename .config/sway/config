@@ -158,7 +158,7 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
 	bindsym $mod+Shift+a focus child
 
 	# swaylock
-	bindsym $mod+Shift+grave exec swaylock -c 000000
+	bindsym $mod+Shift+grave exec swaylock
 
 # Custom bindings
 
