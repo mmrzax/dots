@@ -31,12 +31,7 @@ alias dot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
 export EDITOR=nvim
 export NODE_PATH=`which node`
 
-# pfetch env
 export PF_INFO="ascii title os host kernel uptime pkgs memory shell editor wm"
-export PF_COL1=3
-export PF_COL2=6
-export PF_COL3=1
-
 
 export LANG=en_US.UTF-8
 export XDG_CURRENT_DESKTOP=sway
