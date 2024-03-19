@@ -32,6 +32,7 @@ export EDITOR=nvim
 export NODE_PATH=`which node`
 
 export PF_INFO="ascii title os host kernel uptime pkgs memory shell editor wm"
+export PF_ASCII="catppuccin"
 
 export LANG=en_US.UTF-8
 export XDG_CURRENT_DESKTOP=sway
