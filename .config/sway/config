@@ -8,7 +8,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term wezterm
+set $term kitty
 
 # File Manager
 set $files ranger
@@ -55,10 +55,10 @@ output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
     # Start a file manager
 
     # using kitty
-    # bindsym $mod+u exec kitty $files
+    bindsym $mod+u exec kitty $files
 
     # using wezterm
-    bindsym $mod+u exec wezterm start $files
+    # bindsym $mod+u exec wezterm start $files
 
     # using alacritty
     # bindsym $mod+u exec alacritty --command $files
