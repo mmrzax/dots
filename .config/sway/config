@@ -41,7 +41,7 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 # output HDMI-A-1 pos 0 0 res 1920x1080 bg ~/.wallpapers/underwater.png fill
 output eDP-1 scale 1.0
 output eDP-1 pos 0 0 res 1920x1080 bg ~/wall fill
-# output HDMI-A-1 bg ~/wall2 fill
+output HDMI-A-1 bg ~/wall2 fill
 
 # Random Wallpaper
 # set $wp_path $HOME/.rn/
