@@ -1,39 +1,94 @@
 " set ideajoin
 
-set clipboard=unnamedplus
+" use jk instead of esc
+inoremap <silent> jk <ESC>
+tnoremap <silent> jk <C-\><C-n>
 
-inoremap jk <ESC>
-tnoremap jk <C-\><C-n> 
-nnoremap <Space>` :terminal<CR>
-nnoremap <Space>w :w<CR>
-nnoremap <Space>q :bd<CR>
+" Always keep the cursor in the middle of the window when typing "n" and "N"
+nmap <silent> n nzzzv
+nmap <silent> N Nzzzv
 
-map <Space>h :wincmd h<CR>
-map <Space>j :wincmd j<CR>
-map <Space>k :wincmd k<CR>
-map <Space>l :wincmd l<CR>
 
-nnoremap <C-l> :bnext<CR>
-nnoremap <C-h> :bprev<CR>
+" better up/down
+nnoremap <silent><expr> j "v:count == 0 ? 'gj' : 'j'"
+xnoremap <silent><expr> j "v:count == 0 ? 'gj' : 'j'"
+nnoremap <silent><expr> k "v:count == 0 ? 'gk' : 'k'"
+xnoremap <silent><expr> k "v:count == 0 ? 'gk' : 'k'"
 
-nnoremap <Left> :vertical resize +1<CR>
-nnoremap <Right> :vertical resize -1<CR>
-nnoremap <Up> :resize -1<CR>
-nnoremap <Down> :resize +1<CR>
+" Delete to void register and paste
+xnoremap <silent> <leader>p \"_dP
 
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+" Yank to sys clipboard
+nnoremap <silent> <leader>y "+y
+vnoremap <silent> <leader>y "+y
+nnoremap <silent> <leader>Y "+Y
 
-nnoremap J mzJ`z
+" Delete to void register
+nnoremap <silent> <leader>d "_d
+vnoremap <silent> <leader>d "_d
 
-nnoremap n nzzzv
-nnoremap N Nzzzv
+" Find and Replace
+nnoremap <A-s> ":%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>"
 
-xnoremap <Space>p "_dP 
-nnoremap <Space>y "+y
-vnoremap <Space>y "+y
-nmap <Space>Y "+Y
-nnoremap <Space>d "_d
-vnoremap <Space>d "_d
-nnoremap <Space>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
+
+" Move to window using the <ctrl> hjkl keys
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" Resize window using <ctrl> arrow keys
+nnoremap <C-Up> <cmd>resize +2<cr>
+nnoremap <C-Down> <cmd>resize -2<cr>
+nnoremap <C-Left> <cmd>vertical resize -2<cr>
+nnoremap <C-Right> <cmd>vertical resize +2<cr>
+
+" Move Lines
+nnoremap <A-j> <cmd>m .+1<cr>==
+nnoremap <A-k> <cmd>m .-2<cr>==
+inoremap <A-j> <esc><cmd>m .+1<cr>==gi
+inoremap <A-k> <esc><cmd>m .-2<cr>==gi
+vnoremap <A-j> :m '>+1<cr>gv=gv
+vnoremap <A-k> :m '<-2<cr>gv=gv
+
+" Switch to Other Buffer
+nnoremap <leader>bb <cmd>e #<cr>
+nnoremap <leader>` <cmd>e #<cr>
+
+" Clear search with <esc>
+inoremap <esc> <cmd>noh<cr><esc>
+nnoremap <esc> <cmd>noh<cr><esc>
+
+" https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n
+nnoremap <expr> n  'Nn'[v:searchforward]
+xnoremap <expr> n  'Nn'[v:searchforward]
+onoremap <expr> n  'Nn'[v:searchforward]
+nnoremap <expr> N  'nN'[v:searchforward]
+xnoremap <expr> N  'nN'[v:searchforward]
+onoremap <expr> N  'nN'[v:searchforward]
+
+" Add undo break-points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ; ;<c-g>u
+
+" save files
+inoremap <C-s> <cmd>w<cr><esc>
+xnoremap <C-s> <cmd>w<cr><esc>
+nnoremap <C-s> <cmd>w<cr><esc>
+snoremap <C-s> <cmd>w<cr><esc>
+
+" keywordprg
+nnoremap <leader>K <cmd>norm! K<cr>
+
+" better indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" new file
+nnoremap <leader>fn <cmd>enew<cr>
+
+" quit
+nnoremap <leader>qq <cmd>qa<cr>
+
 set clipboard^=ideaput
