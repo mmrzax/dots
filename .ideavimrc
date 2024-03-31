@@ -10,10 +10,10 @@ nmap <silent> N Nzzzv
 
 
 " better up/down
-nnoremap <silent><expr> j "v:count == 0 ? 'gj' : 'j'"
-xnoremap <silent><expr> j "v:count == 0 ? 'gj' : 'j'"
-nnoremap <silent><expr> k "v:count == 0 ? 'gk' : 'k'"
-xnoremap <silent><expr> k "v:count == 0 ? 'gk' : 'k'"
+nnoremap <silent><expr> j v:count == 0 ? 'gj' : 'j'
+xnoremap <silent><expr> j v:count == 0 ? 'gj' : 'j'
+nnoremap <silent><expr> k v:count == 0 ? 'gk' : 'k'
+xnoremap <silent><expr> k v:count == 0 ? 'gk' : 'k'
 
 " Delete to void register and paste
 xnoremap <silent> <leader>p \"_dP
@@ -28,7 +28,7 @@ nnoremap <silent> <leader>d "_d
 vnoremap <silent> <leader>d "_d
 
 " Find and Replace
-nnoremap <A-s> ":%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>"
+nnoremap <A-s> :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
 
 
 " Move to window using the <ctrl> hjkl keys
@@ -38,26 +38,26 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " Resize window using <ctrl> arrow keys
-nnoremap <C-Up> <cmd>resize +2<cr>
-nnoremap <C-Down> <cmd>resize -2<cr>
-nnoremap <C-Left> <cmd>vertical resize -2<cr>
-nnoremap <C-Right> <cmd>vertical resize +2<cr>
+nnoremap <C-Up> :resize +2<cr>
+nnoremap <C-Down> :resize -2<cr>
+nnoremap <C-Left> :vertical resize -2<cr>
+nnoremap <C-Right> :vertical resize +2<cr>
 
 " Move Lines
-nnoremap <A-j> <cmd>m .+1<cr>==
-nnoremap <A-k> <cmd>m .-2<cr>==
-inoremap <A-j> <esc><cmd>m .+1<cr>==gi
-inoremap <A-k> <esc><cmd>m .-2<cr>==gi
-vnoremap <A-j> :m '>+1<cr>gv=gv
-vnoremap <A-k> :m '<-2<cr>gv=gv
+nnoremap <A-j> :m .+1<cr>==
+nnoremap <A-k> :m .-2<cr>==
+"inoremap <A-j> <esc><cmd>m .+1<cr>==gi
+"inoremap <A-k> <esc><cmd>m .-2<cr>==gi
+"vnoremap <A-j> :m '>+1<cr>gv=gv
+"vnoremap <A-k> :m '<-2<cr>gv=gv
 
 " Switch to Other Buffer
-nnoremap <leader>bb <cmd>e #<cr>
-nnoremap <leader>` <cmd>e #<cr>
+nnoremap <leader>bb :e #<cr>
+nnoremap <leader>` :e #<cr>
 
 " Clear search with <esc>
-inoremap <esc> <cmd>noh<cr><esc>
-nnoremap <esc> <cmd>noh<cr><esc>
+"imap <esc> :noh<cr><esc>
+"nmap <esc> :noh<cr><esc>
 
 " https://github.com/mhinz/vim-galore#saner-behavior-of-n-and-n
 nnoremap <expr> n  'Nn'[v:searchforward]
@@ -68,27 +68,27 @@ xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
 
 " Add undo break-points
-inoremap , ,<c-g>u
-inoremap . .<c-g>u
-inoremap ; ;<c-g>u
+"inoremap , ,<c-g>u
+"inoremap . .<c-g>u
+"inoremap ; ;<c-g>u
 
 " save files
-inoremap <C-s> <cmd>w<cr><esc>
-xnoremap <C-s> <cmd>w<cr><esc>
-nnoremap <C-s> <cmd>w<cr><esc>
-snoremap <C-s> <cmd>w<cr><esc>
+inoremap <C-s> :w<cr>
+xnoremap <C-s> :w<cr>
+nnoremap <C-s> :w<cr>
+snoremap <C-s> :w<cr>
 
 " keywordprg
-nnoremap <leader>K <cmd>norm! K<cr>
+nnoremap <leader>K :norm! K<cr>
 
 " better indenting
 vnoremap < <gv
 vnoremap > >gv
 
 " new file
-nnoremap <leader>fn <cmd>enew<cr>
+nnoremap <leader>fn :enew<cr>
 
 " quit
-nnoremap <leader>qq <cmd>qa<cr>
+nnoremap <leader>qq :qa<cr>
 
 set clipboard^=ideaput
