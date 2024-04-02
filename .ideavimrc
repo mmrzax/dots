@@ -73,10 +73,10 @@ onoremap <expr> N  'nN'[v:searchforward]
 "inoremap ; ;<c-g>u
 
 " save files
-inoremap <C-s> :w<cr>
-xnoremap <C-s> :w<cr>
-nnoremap <C-s> :w<cr>
-snoremap <C-s> :w<cr>
+" inoremap <C-s> <C-o> :w<cr>
+" xnoremap <C-s> :w<cr>
+" nnoremap <C-s> :w<cr>
+" snoremap <C-s> :w<cr>
 
 " keywordprg
 nnoremap <leader>K :norm! K<cr>
@@ -92,3 +92,4 @@ nnoremap <leader>fn :enew<cr>
 nnoremap <leader>qq :qa<cr>
 
 set clipboard^=ideaput
+set ideajoin
