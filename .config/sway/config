@@ -80,7 +80,7 @@ output HDMI-A-1 bg ~/wall2 fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Move your focus around
     bindsym $mod+$left focus left
@@ -201,6 +201,20 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+# Power menu
+set $sysmenu "[P]oweroff|[R]eboot|[L]ogout|[S]uspend|R[e]start"
+bindsym $mod+Shift+e mode $sysmenu
+
+mode $sysmenu {
+    bindsym e         restart
+    bindsym l         exit
+    bindsym p         exec "systemctl poweroff"
+    bindsym r         exec "systemctl reboot"
+    bindsym s         exec "systemctl suspend"
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
 
 # Status Bar:
 
