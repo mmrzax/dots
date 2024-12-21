@@ -2,9 +2,9 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    init = function()
-      require("config.evil_lualine")
-    end,
+    -- init = function()
+    --   require("config.evil_lualine")
+    -- end,
   },
   -- disable alpha
   { "goolord/alpha-nvim", enabled = false },
