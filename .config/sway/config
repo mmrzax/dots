@@ -24,10 +24,9 @@ set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 		dwt enabled
     dwtp enabled
 		tap enabled
-    accel_profile flat
 		natural_scroll enabled
 		middle_emulation enabled
-		pointer_accel 1
+		pointer_accel 0.3
 	}
 
 	input type:keyboard {
