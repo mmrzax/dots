@@ -41,7 +41,7 @@
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Serif Bold
+freetype-font=Roboto
 
 # Monospace Font (string)
 #freetype-monofont=Monospace
@@ -56,7 +56,7 @@
 #freetype-opacity=255
 
 # Text default color (integer)
-#freetype-color=16777215
+freetype-color=65280
 
 # Force bold (boolean)
 #freetype-bold=0
@@ -74,7 +74,7 @@
 #freetype-outline-color=0
 
 # Outline thickness (integer)
-#freetype-outline-thickness=4
+freetype-outline-thickness=6
 
 # Shadow opacity (integer)
 #freetype-shadow-opacity=128
@@ -3577,7 +3577,7 @@ qt-privacy-ask=0
 #audio-time-stretch=1
 
 # Audio output module (string)
-#aout=
+aout=any
 
 # Media role (string)
 #role=video
@@ -4006,10 +4006,10 @@ qt-privacy-ask=0
 #rt-offset=0
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
-loop=1
+#loop=0
 
 # Repeat current item (boolean)
 #repeat=0
