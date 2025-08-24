@@ -12,9 +12,7 @@ if wezterm.config_builder then
 end
 
 -- Main Options
--- config.color_scheme = "rose-pine-moon"
--- config.font = wezterm.font("JetBrains MonoNL")
-config.font = wezterm.font("CommitMono")
+config.font = wezterm.font("CommitMono Nerd Font Mono")
 config.font_size = 18
 
 -- UI and Colors

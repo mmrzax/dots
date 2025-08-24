@@ -25,19 +25,19 @@ builtin_box_drawing = true
 size = 18
 
 [font.normal]
-family = "JetBrains Mono NL"
+family = "CommitMono Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "JetBrains Mono NL"
+family = "CommitMono Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "JetBrains Mono NL"
+family = "CommitMono Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrains Mono NL"
+family = "CommitMono Nerd Font Mono"
 style = "Bold Italic"
 
 [font.glyph_offset]
