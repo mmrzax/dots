@@ -19,7 +19,7 @@ set $menu wofi -Ii -S drun -L 5 -W 500 -p ""
 set $menu2 wofi -Ii -S run -L 5 -W 500 -p ""
 
 # Inputs
-
+input type:keyboard xkb_numlock enabled
 	input type:touchpad {
 		dwt enabled
     dwtp enabled
