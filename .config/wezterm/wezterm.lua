@@ -2,8 +2,8 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 local config = {}
 
-local colors = require("rose-pine").colors()
-local window_frame = require("rose-pine").window_frame()
+-- local colors = require("rose-pine").colors()
+-- local window_frame = require("rose-pine").window_frame()
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
@@ -12,7 +12,7 @@ if wezterm.config_builder then
 end
 
 -- Main Options
-config.font = wezterm.font("CommitMono Nerd Font Mono")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 18
 
 -- UI and Colors
