@@ -12,7 +12,7 @@ if wezterm.config_builder then
 end
 
 -- Main Options
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("Hack")
 config.font_size = 18
 
 -- UI and Colors
