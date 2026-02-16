@@ -1,4 +1,4 @@
-font pango: JetBrains Mono NL 12
+font pango: JetBrains Mono NL 14
 # Logo key
 set $mod Mod4
 
