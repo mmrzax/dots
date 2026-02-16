@@ -4,9 +4,9 @@ window {
     border-radius: 0px;
     border: 2px solid #eb6f92;
     color: #e0def4;
-    font-family: 'JetBrainsMonoNL Nerd Font Propo';
-    font-size: 20px;
-	font-weight: bold;
+    font-family: 'JetBrains Mono NL';
+    font-size: 24px;
+	/* font-weight: bold; */
 }
 
 #input {
