@@ -7,11 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "which_key": {
+    "enabled": true
+  },
+  "cursor_shape": "block",
   "vim": {
     "toggle_relative_line_numbers": true,
   },
   "relative_line_numbers": "disabled",
-  "ui_font_family": "Inter",
+  "ui_font_family": "JetBrains Mono NL",
   "buffer_font_family": "JetBrains Mono NL",
   "telemetry": {
     "diagnostics": false,
