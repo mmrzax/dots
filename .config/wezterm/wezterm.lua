@@ -12,15 +12,16 @@ if wezterm.config_builder then
 end
 
 -- Main Options
-config.font = wezterm.font("Hack")
-config.font_size = 18
+config.font = wezterm.font("Fira Code")
+config.font_size = 14
 
 -- UI and Colors
 config.tab_bar_at_bottom = false
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.colors = colors
-config.window_frame = window_frame
+config.color_scheme = "rose-pine"
+-- config.colors = colors
+-- config.window_frame = window_frame
 -- config.window_background_opacity = 0.8
 -- config.text_background_opacity = 0.8
 
