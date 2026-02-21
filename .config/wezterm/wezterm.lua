@@ -13,7 +13,7 @@ end
 
 -- Main Options
 config.font = wezterm.font("Hack")
-config.font_size = 16
+config.font_size = 20
 
 -- UI and Colors
 config.tab_bar_at_bottom = false
