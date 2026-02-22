@@ -204,18 +204,18 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Power menu
-set $sysmenu "[P]oweroff|[R]eboot|[L]ogout|[S]uspend|R[e]start"
-bindsym $mod+Shift+e mode $sysmenu
-
-mode $sysmenu {
-    bindsym e         restart
-    bindsym l         exit
-    bindsym p         exec "systemctl poweroff"
-    bindsym r         exec "systemctl reboot"
-    bindsym s         exec "systemctl suspend"
-    bindsym Return    mode "default"
-    bindsym Escape    mode "default"
-}
+# set $sysmenu "[P]oweroff|[R]eboot|[L]ogout|[S]uspend|R[e]start"
+# bindsym $mod+Shift+e mode $sysmenu
+#
+# mode $sysmenu {
+#     bindsym e         restart
+#     bindsym l         exit
+#     bindsym p         exec "systemctl poweroff"
+#     bindsym r         exec "systemctl reboot"
+#     bindsym s         exec "systemctl suspend"
+#     bindsym Return    mode "default"
+#     bindsym Escape    mode "default"
+# }
 
 # Status Bar:
 
