@@ -228,7 +228,11 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # exec lxsession &
 exec nm-applet --indicator &
 exec blueman-applet &
-exec dunst &
+# Notification Daemon
+exec swaync
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
+# exec dunst &
 
 # Gaps
 
@@ -243,8 +247,8 @@ default_border pixel 3
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'rose-pine-gtk'
-	gsettings set $gnome-schema icon-theme 'Zafiro-Nord-Dark-Black'
-	# gsettings set $gnome-schema cursor-theme 'Nordic-cursors'
+	gsettings set $gnome-schema icon-theme 'RoséPine'
+	# gsettings set $gnome-schema cursor-theme 'BreezeX-RoséPine'
 	# gsettings set $gnome-schema cursor-size '20'
 	gsettings set $gnome-schema font-name 'Inter 12'
     gsettings set $gnome-schema monospace-font-name 'JetBrains Mono NL 12'
