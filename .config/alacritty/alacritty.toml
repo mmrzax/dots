@@ -25,7 +25,7 @@ builtin_box_drawing = true
 size = 20
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "JetBrains Mono NL"
 style = "Regular"
 
 [font.bold]

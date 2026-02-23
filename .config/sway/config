@@ -1,5 +1,5 @@
 font pango: JetBrains Mono NL 14
-# Logo key
+
 set $mod Mod4
 
 set $left h
@@ -52,15 +52,14 @@ output HDMI-A-1 bg ~/wall2 fill
 
 # Start a terminal
 bindsym $mod+grave exec $term
+# floating terminal in the middle of screen
+bindsym $mod+Return exec $term --class "__termpad"
 
 # Start a file manager
-
 # using kitty
 # bindsym $mod+u exec kitty $files
-
 # using wezterm
 # bindsym $mod+u exec wezterm start $files
-
 # using alacritty
 bindsym $mod+u exec alacritty --command $files
 
@@ -172,6 +171,9 @@ bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# termpad is a special application class which is floating and used for terminals.
+for_window [app_id="__termpad"] floating enable
 
 # Scratchpad:
 
