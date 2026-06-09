@@ -7,10 +7,14 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_size": 18.0,
+  "ui_font_size": 20.0,
+  "proxy": "",
+  "buffer_font_family": "JetBrains Mono NL",
   "agent": {
     "default_model": {
       "provider": "openai",
-      "model": "gpt-3.5-turbo"
+      "model": "gpt-4"
     },
     "favorite_models": [],
     "model_parameters": []
@@ -21,29 +25,20 @@
   "which_key": {
     "enabled": true
   },
-  "cursor_shape": "block",
   "vim": {
     "toggle_relative_line_numbers": true,
   },
   "relative_line_numbers": "disabled",
-  "ui_font_family": "JetBrains Mono NL",
-  "buffer_font_family": "JetBrains Mono NL",
+  "ui_font_family": ".ZedSans",
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
   "vim_mode": true,
   "base_keymap": "JetBrains",
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)",
-  },
-  "ui_font_size": 22.0,
-  "buffer_font_size": 20.0,
   "theme": {
     "mode": "dark",
-    "light": "Rosé Pine Dawn",
+    "light": "Rosé Pine",
     "dark": "Rosé Pine",
   },
 }
