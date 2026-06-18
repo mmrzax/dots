@@ -7,9 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "buffer_font_size": 24.0,
+  "buffer_font_size": 20.0,
+  "buffer_font_fallbacks": ["Kawkab Mono"],
   "title_bar": {
-    "show_menus": true
+    "show_menus": true,
   },
   "cli_default_open_behavior": "existing_window",
   "ui_font_size": 22.0,
@@ -18,16 +19,16 @@
   "agent": {
     "default_model": {
       "provider": "openai",
-      "model": "gpt-4"
+      "model": "gpt-4",
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "which_key": {
-    "enabled": true
+    "enabled": true,
   },
   "vim": {
     "toggle_relative_line_numbers": true,
@@ -43,6 +44,22 @@
   "theme": {
     "mode": "dark",
     "light": "Rosé Pine",
-    "dark": "Rosé Pine",
+    "dark": "Rosé Pine Moon",
+  },
+  "experimental.theme_overrides": {
+    "background": "#000000",
+    "editor.background": "#000000",
+    "editor.gutter.background": "#000000",
+    "panel.background": "#000000",
+    "surface.background": "#000000",
+    "terminal.background": "#000000",
+    "toolbar.background": "#000000",
+    "title_bar.background": "#000000",
+    "title_bar.inactive_background": "#000000",
+    "status_bar.background": "#000000",
+    "tab_bar.background": "#000000",
+    "tab.active_background": "#000000",
+    "tab.inactive_background": "#000000",
+    "scrollbar.track.background": "#000000",
   },
 }
