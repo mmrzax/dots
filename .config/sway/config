@@ -39,135 +39,135 @@ workspace 2 output HDMI-A-1
 
 
 ########## Bindings
-bindsym $mod+grave exec $term
-bindsym $mod+Return exec $term --class "__termpad"
+bindsym --to-code $mod+grave exec $term
+bindsym --to-code $mod+Return exec $term --class "__termpad"
 for_window [app_id="__termpad"] {
     floating enable
     resize set 900 550
     move position center
 }
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-bindsym $mod+u exec kitty $files
-# bindsym $mod+u exec wezterm start $files
-# bindsym $mod+u exec alacritty --command $files
+bindsym --to-code $mod+Shift+minus move scratchpad
+bindsym --to-code $mod+minus scratchpad show
+bindsym --to-code $mod+u exec kitty $files
+# bindsym --to-code $mod+u exec wezterm start $files
+# bindsym --to-code $mod+u exec alacritty --command $files
 
 # Screenshot
 # Full screen to file
-bindsym Print exec grim ~/Pictures/shot/$(date +%Y%m%d_%H%M%S).png
+bindsym --to-code Print exec grim ~/Pictures/shot/$(date +%Y%m%d_%H%M%S).png
 # Region select to clipboard
-bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
+bindsym --to-code $mod+Print exec grim -g "$(slurp)" - | wl-copy
 
 # Kill focused window
-bindsym $mod+Shift+q kill
+bindsym --to-code $mod+Shift+q kill
 
 # Start your launcher
-bindsym $mod+d exec $menu
-bindsym $mod+Shift+d exec $menu2
+bindsym --to-code $mod+d exec $menu
+bindsym --to-code $mod+Shift+d exec $menu2
 
 # values: normal or inverse
 floating_modifier $mod normal
 
 # Reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym --to-code $mod+Shift+c reload
 
 # Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym --to-code $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
 # Move your focus around
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
+bindsym --to-code $mod+$left focus left
+bindsym --to-code $mod+$down focus down
+bindsym --to-code $mod+$up focus up
+bindsym --to-code $mod+$right focus right
 
 # Move the focused window with the same, but add Shift
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+bindsym --to-code $mod+Shift+$left move left
+bindsym --to-code $mod+Shift+$down move down
+bindsym --to-code $mod+Shift+$up move up
+bindsym --to-code $mod+Shift+$right move right
 
 # Workspaces
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
-bindsym $mod+5 workspace number 5
-bindsym $mod+6 workspace number 6
-bindsym $mod+7 workspace number 7
-bindsym $mod+8 workspace number 8
-bindsym $mod+9 workspace number 9
-bindsym $mod+0 workspace number 10
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
-bindsym $mod+Shift+5 move container to workspace number 5
-bindsym $mod+Shift+6 move container to workspace number 6
-bindsym $mod+Shift+7 move container to workspace number 7
-bindsym $mod+Shift+8 move container to workspace number 8
-bindsym $mod+Shift+9 move container to workspace number 9
-bindsym $mod+Shift+0 move container to workspace number 10
+bindsym --to-code $mod+1 workspace number 1
+bindsym --to-code $mod+2 workspace number 2
+bindsym --to-code $mod+3 workspace number 3
+bindsym --to-code $mod+4 workspace number 4
+bindsym --to-code $mod+5 workspace number 5
+bindsym --to-code $mod+6 workspace number 6
+bindsym --to-code $mod+7 workspace number 7
+bindsym --to-code $mod+8 workspace number 8
+bindsym --to-code $mod+9 workspace number 9
+bindsym --to-code $mod+0 workspace number 10
+bindsym --to-code $mod+Shift+1 move container to workspace number 1
+bindsym --to-code $mod+Shift+2 move container to workspace number 2
+bindsym --to-code $mod+Shift+3 move container to workspace number 3
+bindsym --to-code $mod+Shift+4 move container to workspace number 4
+bindsym --to-code $mod+Shift+5 move container to workspace number 5
+bindsym --to-code $mod+Shift+6 move container to workspace number 6
+bindsym --to-code $mod+Shift+7 move container to workspace number 7
+bindsym --to-code $mod+Shift+8 move container to workspace number 8
+bindsym --to-code $mod+Shift+9 move container to workspace number 9
+bindsym --to-code $mod+Shift+0 move container to workspace number 10
 
 #horizontal and vertical splits
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindsym --to-code $mod+b splith
+bindsym --to-code $mod+v splitv
 
 # Switch the current container between different layout styles
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym --to-code $mod+s layout stacking
+bindsym --to-code $mod+w layout tabbed
+bindsym --to-code $mod+e layout toggle split
 
 # Make the current focus fullscreen
-bindsym $mod+f fullscreen
+bindsym --to-code $mod+f fullscreen
 
 # Toggle the current focus between tiling and floating mode
-bindsym $mod+Shift+space floating toggle
+bindsym --to-code $mod+Shift+space floating toggle
 
 # Swap focus between the tiling area and the floating area
-bindsym $mod+space focus mode_toggle
+bindsym --to-code $mod+space focus mode_toggle
 
 # Move focus to the parent container
-bindsym $mod+a focus parent
+bindsym --to-code $mod+a focus parent
 
 # Move focus to the child container
-bindsym $mod+Shift+a focus child
+bindsym --to-code $mod+Shift+a focus child
 
 # swaylock
-bindsym $mod+Shift+grave exec swaylock
+bindsym --to-code $mod+Shift+grave exec swaylock
 
 # Brightness keys
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym --to-code XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym --to-code XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Volume keys
-bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym --to-code --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --to-code --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --to-code --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --to-code --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Resizing containers:
 mode "resize" {
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+    bindsym --to-code $left resize shrink width 10px
+    bindsym --to-code $down resize grow height 10px
+    bindsym --to-code $up resize shrink height 10px
+    bindsym --to-code $right resize grow width 10px
+    bindsym --to-code Return mode "default"
+    bindsym --to-code Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym --to-code $mod+r mode "resize"
 
 # Power menu
 # set $sysmenu "[P]oweroff|[R]eboot|[L]ogout|[S]uspend|R[e]start"
-# bindsym $mod+Shift+e mode $sysmenu
+# bindsym --to-code $mod+Shift+e mode $sysmenu
 #
 # mode $sysmenu {
-#     bindsym e         restart
-#     bindsym l         exit
-#     bindsym p         exec "systemctl poweroff"
-#     bindsym r         exec "systemctl reboot"
-#     bindsym s         exec "systemctl suspend"
-#     bindsym Return    mode "default"
-#     bindsym Escape    mode "default"
+#     bindsym --to-code e         restart
+#     bindsym --to-code l         exit
+#     bindsym --to-code p         exec "systemctl poweroff"
+#     bindsym --to-code r         exec "systemctl reboot"
+#     bindsym --to-code s         exec "systemctl suspend"
+#     bindsym --to-code Return    mode "default"
+#     bindsym --to-code Escape    mode "default"
 # }
 
 
@@ -186,7 +186,7 @@ exec blueman-applet
 # Notification Daemon
 exec swaync
 # Toggle control center
-bindsym $mod+Shift+n exec swaync-client -t -sw
+bindsym --to-code $mod+Shift+n exec swaync-client -t -sw
 
 # GTK Options
 set $gnome-schema org.gnome.desktop.interface
