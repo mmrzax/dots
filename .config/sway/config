@@ -189,15 +189,15 @@ exec swaync
 bindsym --to-code $mod+Shift+n exec swaync-client -t -sw
 
 # GTK Options
-set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'rose-pine-gtk'
-    gmettings set $gnome-schema icon-theme 'RoséPine'
-    #gsettings set $gnome-schema cursor-theme 'BreezeX-RoséPine'
-    #gsettings set $gnome-schema cursor-size '20'
-    gsettings set $gnome-schema font-name 'Inter 12'
-    gsettings set $gnome-schema monospace-font-name 'JetBrains Mono NL 12'
-}
+# set $gnome-schema org.gnome.desktop.interface
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'rose-pine-gtk'
+#     gmettings set $gnome-schema icon-theme 'RoséPine'
+#     #gsettings set $gnome-schema cursor-theme 'BreezeX-RoséPine'
+#     #gsettings set $gnome-schema cursor-size '20'
+#     gsettings set $gnome-schema font-name 'Inter 12'
+#     gsettings set $gnome-schema monospace-font-name 'JetBrains Mono NL 12'
+# }
 
 # Idle configuration
 exec swayidle -w \
@@ -219,5 +219,7 @@ default_floating_border pixel 3
 
 include /etc/sway/config.d/*
 
+seat seat0 xcursor_theme BreezeX-RosePine-Linux 64
 exec dbus-update-activation-environment --systemd DISPLAY XAUTHORITY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+
