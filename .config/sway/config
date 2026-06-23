@@ -188,6 +188,11 @@ exec swaync
 # Toggle control center
 bindsym --to-code $mod+Shift+n exec swaync-client -t -sw
 
+# Clipboard
+bindsym Mod1+C exec nwg-clipman
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
+
 # GTK Options
 # set $gnome-schema org.gnome.desktop.interface
 # exec_always {
