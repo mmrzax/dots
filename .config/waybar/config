@@ -1,7 +1,9 @@
 // vim: ft=jsonc
 {
   "layer": "top",
-  "spacing": 4,
+  "output": "eDP-1",
+  "position": "top",
+  "spacing": 10,
   "modules-left": [
     "tray",
     "custom/media"
