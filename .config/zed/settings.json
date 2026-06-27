@@ -2,6 +2,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tab_bar": {
+    "show": false
+  },
   "buffer_font_size": 18.0,
   "ui_font_weight": 500.0,
   "ui_font_family": "Inter",
