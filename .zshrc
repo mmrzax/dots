@@ -69,6 +69,13 @@ alias myip="curl ipinfo.io/ip"
 alias vi="nvim"
 alias l="lsd -lahtr"
 alias dot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
+alias d="dot"
+alias ds="dot status -s"
+alias da="dot add"
+alias dc="dot commit"
+alias dp="dot push"
+alias dl="dot pull"
+alias dlo="dot log --oneline --graph --decorate"
 
 # ── Git Aliases ───────────────────────────────────────────────────────────────
 alias g="git"
