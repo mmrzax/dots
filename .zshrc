@@ -35,6 +35,14 @@ zinit light zsh-users/zsh-completions
 zinit ice wait lucid
 zinit light Aloxaf/fzf-tab
 
+zinit ice wait lucid atload'
+    bindkey "^[[A" history-substring-search-up
+    bindkey "^[[B" history-substring-search-down
+    bindkey -M vicmd "k" history-substring-search-up
+    bindkey -M vicmd "j" history-substring-search-down
+'
+zinit light zsh-users/zsh-history-substring-search
+
 # ── Completions ───────────────────────────────────────────────────────────────
 autoload -Uz compinit
 compinit
