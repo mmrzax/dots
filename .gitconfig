@@ -1,7 +1,23 @@
+[core]
+  pager = delta
+	autocrlf = input
+
+[delta]
+  navigate = true
+  line-numbers = true
+  dark = true
+  syntax-theme = rose-pine-moon
+
+[merge]
+  conflictStyle = zdiff3
+
+[interactive]
+  diffFilter = delta --color-only
+
+[init]
+	defaultBranch = main
+
 [user]
 	name = mmrzax
 	email = mmrzax@gmail.com
-[init]
-	defaultBranch = main
-[core]
-	autocrlf = input
+
