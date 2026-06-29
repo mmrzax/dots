@@ -43,6 +43,9 @@ zinit ice wait lucid atload'
 '
 zinit light zsh-users/zsh-history-substring-search
 
+zinit ice wait lucid
+zinit light MichaelAquilina/zsh-you-should-use
+
 # ── Completions ───────────────────────────────────────────────────────────────
 autoload -Uz compinit
 compinit
@@ -55,9 +58,11 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
 setopt APPEND_HISTORY
+setopt HIST_FIND_NO_DUPS
 
 # ── Prompt ────────────────────────────────────────────────────────────────────
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # ── Aliases ───────────────────────────────────────────────────────────────────
 alias myip="curl ipinfo.io/ip"
